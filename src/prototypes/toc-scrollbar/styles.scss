@@ -24,3 +24,19 @@ Do not remove. Required for dynamic generation of survey summary page
 }
 
 
+/* FOOTER */
+
+hr.ons-footer__hr {
+  border-top: 1px solid var(--ons-color-grey-35);
+}
+
+p.ogl-text {
+  margin-top: 1rem; // always applies
+}
+
+@media (min-width: 1024px) {
+  p.ogl-text {
+    max-width: 50%; // desktop only
+  }
+}
+
