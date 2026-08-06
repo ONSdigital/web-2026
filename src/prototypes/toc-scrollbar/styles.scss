@@ -30,13 +30,38 @@ hr.ons-footer__hr {
   border-top: 1px solid var(--ons-color-grey-35);
 }
 
-p.ogl-text {
-  margin-top: 1rem; // always applies
+/* Base: mobile/tablet stacked */
+.sub-footer {
+  display: block;
+  margin-top: 2rem;
 }
 
+.sub-footer__left,
+.sub-footer__right {
+  width: 100%;
+}
+
+p.ogl-text {
+  margin-top: 1rem;
+}
+
+/* Desktop: side-by-side */
 @media (min-width: 1024px) {
-  p.ogl-text {
-    max-width: 50%; // desktop only
+  .sub-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 2rem;
+  }
+
+  .sub-footer__left {
+    width: 50%;
+  }
+
+  .sub-footer__right {
+    width: 50%;
+    text-align: right;
   }
 }
+
 
