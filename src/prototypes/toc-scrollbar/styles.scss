@@ -23,8 +23,13 @@ Do not remove. Required for dynamic generation of survey summary page
   margin-bottom: 48px!important;
 }
 
+/* change colour of h2 page context label */
+.ons-hero--topic {
+  color: var(--ons-color-grey-75);
+}
 
-/* FOOTER */
+
+/* FOOTER --------------------------------------- */
 
 hr.ons-footer__hr {
   border-top: 1px solid var(--ons-color-grey-35);
