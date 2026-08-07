@@ -28,6 +28,20 @@ Do not remove. Required for dynamic generation of survey summary page
   color: var(--ons-color-grey-75);
 }
 
+/* SCROLLBAR for leftcol ToC --------------------------------------- */
+
+.toc-scroll {
+  overflow-y: auto;
+  max-height: calc(100vh - 4rem);
+  padding-right: 1.25rem;
+}
+
+.ons-list--toc {
+  padding-left: 2rem;
+}
+
+
+
 
 /* FOOTER --------------------------------------- */
 
