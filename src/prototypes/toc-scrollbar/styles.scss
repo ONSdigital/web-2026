@@ -41,6 +41,15 @@ Do not remove. Required for dynamic generation of survey summary page
 }
 
 
+/* MAIN BODY CONTENT --------------------------------------- */
+
+/* Kas method to get the readable/accessible text blocks 13-14 words per line ---------- */
+.ons-text-container {
+    max-width: 632px;
+    // width: 100%;
+}
+
+
 
 
 /* FOOTER --------------------------------------- */
