@@ -49,6 +49,28 @@ Do not remove. Required for dynamic generation of survey summary page
     // width: 100%;
 }
 
+/* best-practice helper for prototype links that we don't want users to actually click on ---------- */
+.ons-link--disabled {
+  pointer-events: none;
+  cursor: default;
+}
+
+/* FIGURE component - from Kas CSS ---------- */
+@media (min-width: 40em) {
+    .ons-chartbox {
+        padding: 24px;
+    }
+}
+.ons-chartbox {
+    background-color: #fff;
+    border: 1px solid #bcbcbd;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, .05);
+    margin-bottom: 32px;
+    max-width: 856px;
+    padding: 24px;
+}
+
+
 
 
 
