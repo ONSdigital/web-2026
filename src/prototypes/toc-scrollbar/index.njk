@@ -716,7 +716,8 @@ layout: toc-scrollbar/views/_main
             </figcaption>
 
             <figure class="ons-chart-image">
-              <img class="ons-image__img" src="https://raw.githubusercontent.com/skyrocket/images/refs/heads/main/fig-2-crime.png" alt="ONS chart figure 2">
+              {# <img class="ons-image__img" src="https://raw.githubusercontent.com/skyrocket/images/refs/heads/main/fig-2-crime.png" alt="ONS chart figure 2"> #}
+              <img class="ons-image__img" src="/prototypes/toc-scrollbar/images/fig-1-crime.png" alt="ONS chart figure 2">
 
               <figcaption class="ons-image__caption">Crime Survey for England and Wales (CSEW) from the Office for National Statistics</figcaption>
             </figure>
@@ -768,15 +769,57 @@ layout: toc-scrollbar/views/_main
 
       <section id="section4" class="ons-u-mb-xl">
         <div class="ons-width-container">
-          <h2>header</h2>
-          <p>text</p>
+          <h2>Homicide</h2>
+          <p>The police recorded 503 homicide offences in year ending (YE) December 2025, a 6% decrease from 534 offences in the previous year. This was because of a 21% fall in knife or sharp instrument homicides to 172 offences compared with the previous year (217 offences). The homicide rate was 8.1 per 1 million people, down from 8.9 in YE December 2024.</p>
           <p>text</p>
           <p>text</p>
         </div>
 
-        <figure class="ons-chart">
-          <!-- full 8-col chart -->
-        </figure>
+        <!-- Figure 3 -->
+        <div class="ons-chartbox">
+          <figure class="ons-chart">
+            <figcaption>
+              <p class="ons-figure__label ons-u-fs-r--1">Figure 3</p>
+              <h3 class="ons-figure__title ons-u-fs-r">Homicide decreased by 6% in the last year</h3>
+              <p class="ons-figure__subtitle ons-u-fs-r--1">England and Wales, year ending (YE) March 2003 to YE December 2025</p>
+            </figcaption>
+
+            <figure class="ons-chart-image">
+              <img class="ons-image__img" src="https://raw.githubusercontent.com/skyrocket/images/refs/heads/main/fig-2-crime.png" alt="ONS chart figure 2">
+
+              <figcaption class="ons-image__caption">Source: Police recorded crime from the Home Office</figcaption>
+            </figure>
+            <div class="ons-chart_download">
+              <span class=" ons-u-fs-r--b">Download Figure 3 data: </span>
+              <div class="ons-list ons-list--p">
+                <p class="ons-list__item">
+                  <a href="#0" class="ons-list__link">Excel spreadsheet (XLSX format, 25KB)</a>
+                </p>
+              </div>
+            </div>
+          </figure>
+
+          <div id="details-example" class="ons-details ons-js-details ons-details--initialised" role="group">
+            <div class="ons-details__heading ons-js-details-heading" role="link" aria-controls="details-example" tabindex="0" aria-expanded="false" data-ga-action="Close panel" data-ga-interaction-value="Close panel">
+              <h2 class="ons-details__title ons-u-fs-r--b">Notes</h2>
+              <span class="ons-details__icon">
+                <svg class="ons-icon" viewBox="0 0 8 13" xmlns="http://www.w3.org/2000/svg" focusable="false" fill="currentColor" role="img" aria-hidden="true">
+                  <path d="M5.74,14.28l-.57-.56a.5.5,0,0,1,0-.71h0l5-5-5-5a.5.5,0,0,1,0-.71h0l.57-.56a.5.5,0,0,1,.71,0h0l5.93,5.93a.5.5,0,0,1,0,.7L6.45,14.28a.5.5,0,0,1-.71,0Z" transform="translate(-5.02 -1.59)"></path>
+                </svg>
+              </span>
+            </div>
+            <div id="details-example-content" class="ons-details__content ons-js-details-content" aria-hidden="true">
+              <ol class="ons-list">
+                <li class="ons-list__item">Notable incidents affected offences: 173 victims of Harold Shipman in 2003; 52 victims of London bombings in July 2005; 96 victims of Hillsborough in April 2016; 22 victims of Manchester Arena bombing in May 2017; 39 people found dead inside lorry in Essex in October 2019.</li>
+                <li class="ons-list__item">Homicide data in police recorded crime data differ from the Home Office Homicide Index.</li>
+              </ol>
+            </div>
+          </div>
+        </div><!-- end fig 3 -->
+
+        <div class="ons-width-container">
+          <p>For the latest analysis on homicide offences held within the Home Office Homicide Index, see our <a href="#" aria-disabled="true" class="ons-link--disabled">Homicide in England and Wales: year ending March 2025 article</a>. As the Homicide Index takes account of court outcomes, figures from this source will differ from the main police recorded crime collection and are not directly comparable. Figures based on the Homicide Index are <a href="#" aria-disabled="true" class="ons-link--disabled">accredited official statistics</a>.</p>
+        </div>
       </section>
 
       <section id="section5" class="ons-u-mb-xl">
