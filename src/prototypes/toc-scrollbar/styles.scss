@@ -28,9 +28,21 @@ Do not remove. Required for dynamic generation of survey summary page
   color: var(--ons-color-grey-75);
 }
 
+/* SPACING classes to extend beyond xl which is only 40px --------------------------------------- */
+
+.ons-u-mb-xxl {
+  margin-bottom: 3rem !important; /* 48px */
+}
+
+.ons-u-mb-xxxl {
+  margin-bottom: 4rem !important; /* 64px */
+}
+
+
+
 /* SCROLLBAR for leftcol ToC --------------------------------------- */
 
-.toc-scroll {
+.leftcol-scroll {
   overflow-y: auto;
   max-height: calc(100vh - 4rem);
   padding-right: 1.25rem;
