@@ -7,12 +7,15 @@
   "author": {
     "name": "ONS Digital"
   },
+
   "scripts": {
-    "start": "gulp prototype-kit:start",
-    "watch": "gulp prototype-kit:watch",
-    "build": "yarn tidy-clean && NODE_ENV=production gulp prototype-kit:build",
-    "tidy-clean": "rm -rf build"
-  },
+  "start": "gulp prototype-kit:start",
+  "watch": "gulp prototype-kit:watch",
+  "build": "yarn tidy-clean && NODE_ENV=production gulp prototype-kit:build && gulp prototype-kit:build-static-files",
+  "tidy-clean": "rm -rf build",
+  "build-static-files": "gulp prototype-kit:build-static-files"
+},
+
   "dependencies": {
     "@ons/design-system": "^73.10.0",
     "@ons/prototype-kit": "git+https://github.com/ONSdigital/prototype-kit#v1.0.14",

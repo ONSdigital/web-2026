@@ -93,3 +93,71 @@ If you need to add custom CSS to style a new component or override styling on an
 5. When using the autosuggest component, ensure that you reference the correct path for the autosuggestData param. The path should be `data/<json-filename>`
 
  Note-: When deploying the prototype, create a new public gist at https://gist.github.com/ and add the Json file using .json extension. Then, click on 'raw' button and copy the URL into the autosuggestData param.
+
+
+### SOLUTION FOR THE ADD IMAGES BUG!
+**ONS Prototype Kit — How to Enable Image Support (Static File Pipeline Fix)**
+This guide explains how to make the ONS HTML Prototype Kit copy images from src/ into build/, so they display correctly in prototypes.
+
+1. Add an images folder inside src/
+Choose one of these patterns:
+
+Global assets (recommended)
+Code
+src/assets/
+Prototype‑specific assets
+Code
+src/prototypes/<your-prototype>/assets/
+Add your images inside the folder, jpeg, PNG, SVG
+
+Code
+src/prototypes/assets/fig-1-crime.png
+2. Enable the static file Gulp task
+In gulpfile.js, uncomment the example block:
+
+js
+/* Example1: Task to build static files */
+const staticFileExtensions = ['jpg', 'jpeg', 'png', 'gif', 'mp4', 'mpeg'];
+gulp.task('prototype-kit:build-static-files', () => {
+  return gulp
+    .src(`./src/**/*.{${staticFileExtensions.join(',')}}`)
+    .pipe(gulp.dest('./build'));
+});
+This tells Gulp to copy images from src/ into build/.
+
+3. Update package.json to include the static file task
+Inside "scripts", add the static‑file command:
+
+json
+"build-static-files": "gulp prototype-kit:build-static-files"
+Then extend the main build script so images are copied automatically:
+
+json
+"build": "yarn tidy-clean && NODE_ENV=production gulp prototype-kit:build && gulp prototype-kit:build-static-files"
+Your scripts block should look like:
+
+json
+"scripts": {
+  "start": "gulp prototype-kit:start",
+  "watch": "gulp prototype-kit:watch",
+  "build": "yarn tidy-clean && NODE_ENV=production gulp prototype-kit:build && gulp prototype-kit:build-static-files",
+  "tidy-clean": "rm -rf build",
+  "build-static-files": "gulp prototype-kit:build-static-files"
+},
+(Ensure there is a comma after the closing brace if more properties follow.)
+
+4. Run the static file task once
+This creates the initial build/assets or build/prototypes/assets folder:
+
+In Terminal type:
+yarn build-static-files
+After this, the main build script handles image copying automatically.
+
+5. Build or start the prototype as normal
+Development:
+Code
+yarn start
+Production build:
+Code
+yarn build
+Images will now be included automatically.
