@@ -48,6 +48,16 @@ Do not remove. Required for dynamic generation of survey summary page
   padding-right: 1.25rem;
 }
 
+/* Disable left-column scroll on mobile using ONS 'm' breakpoint = 768px */
+@media (max-width: 48rem) {
+  .leftcol-scroll {
+    overflow: visible;
+    max-height: none;
+    padding-right: 0;
+  }
+}
+
+
 .ons-list--toc {
   padding-left: 2rem;
 }
