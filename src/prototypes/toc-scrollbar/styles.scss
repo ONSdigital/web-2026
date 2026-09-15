@@ -46,6 +46,7 @@ Do not remove. Required for dynamic generation of survey summary page
   overflow-y: auto;
   max-height: calc(100vh - 4rem);
   padding-right: 1.25rem;
+  border-bottom: 1px solid var(--ons-color-grey-15);
 }
 
 /* Disable left-column scroll on mobile using ONS 'm' breakpoint = 768px */
@@ -57,10 +58,16 @@ Do not remove. Required for dynamic generation of survey summary page
   }
 }
 
-
 .ons-list--toc {
   padding-left: 2rem;
 }
+
+.ons-table-of-contents-container {
+  border-bottom: none;
+  margin-bottom: 2rem;
+  padding-bottom: 0rem;
+}
+
 
 
 /* Kas scroll highlight active on ToC ---------- */
