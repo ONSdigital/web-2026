@@ -62,6 +62,11 @@ Do not remove. Required for dynamic generation of survey summary page
   padding-left: 2rem;
 }
 
+aside.ons-related-content {
+  border-bottom: 1px solid var(--ons-color-grey-15);
+  padding-bottom: 1rem;
+}
+
 .ons-table-of-contents-container {
   border-bottom: none;
   margin-bottom: 2rem;
