@@ -1,0 +1,185 @@
+/***********************************************************************
+Update the version in the path below to the version being used
+***********************************************************************/
+@import '../../../node_modules/@ons/design-system/scss/vars/_index.scss';
+@import '../../../node_modules/@ons/design-system/scss/helpers/_index.scss';
+@import '../../../node_modules/@ons/design-system/scss/utilities/_index.scss';
+
+/***********************************************************************
+Do not remove. Required for dynamic generation of survey summary page
+***********************************************************************/
+
+.js-summary {
+  border-collapse: collapse;
+  border-spacing: 0;
+  width: 100%;
+}
+/***********************************************************************/
+/***********************************************************************/
+
+
+
+.ons-hero--grey {
+  margin-bottom: 48px!important;
+}
+
+/* change colour of h2 page context label */
+.ons-hero--topic {
+  color: var(--ons-color-grey-75);
+}
+
+/* SPACING classes to extend beyond xl which is only 40px --------------------------------------- */
+
+.ons-u-mb-xxl {
+  margin-bottom: 3rem !important; /* 48px */
+}
+
+.ons-u-mb-xxxl {
+  margin-bottom: 4rem !important; /* 64px */
+}
+
+
+
+/* SCROLLBAR for leftcol ToC --------------------------------------- */
+
+.leftcol-scroll {
+  overflow-y: auto;
+  max-height: calc(100vh - 4rem);
+  padding-right: 1.25rem;
+  border-bottom: 1px solid var(--ons-color-grey-15);
+}
+
+/* Disable left-column scroll on mobile using ONS 'm' breakpoint = 768px */
+@media (max-width: 48rem) {
+  .leftcol-scroll {
+    overflow: visible;
+    max-height: none;
+    padding-right: 0;
+  }
+}
+
+.ons-list--toc {
+  padding-left: 2rem;
+}
+
+aside.ons-related-content {
+  border-bottom: 1px solid var(--ons-color-grey-15);
+  padding-bottom: 1rem;
+}
+
+.ons-table-of-contents-container {
+  border-bottom: none;
+  margin-bottom: 2rem;
+  padding-bottom: 0rem;
+}
+
+
+
+/* Kas scroll highlight active on ToC ---------- */
+.ons-table-of-contents__link-active {
+  background-color: rgba(32, 96, 149, .1);
+  color: var(--ons-color-text-link-hover);
+  text-decoration: underline solid var(--ons-color-text-link-hover) 2px;
+}
+
+
+/* MAIN BODY CONTENT --------------------------------------- */
+
+/* Kas method to get the readable/accessible text blocks 13-14 words per line ---------- */
+.ons-text-container {
+  max-width: 632px;
+  width: 100%;
+}
+
+/* best-practice helper for prototype links that we don't want users to actually click on ---------- */
+.ons-link--disabled {
+  pointer-events: none;
+  cursor: default;
+}
+
+/* FIGURE component - from Kas CSS ---------- */
+@media (min-width: 40em) {
+  .ons-chartbox {
+    padding: 24px;
+  }
+}
+.ons-chartbox {
+  background-color: #fff;
+  border: 1px solid #bcbcbd;
+  //box-shadow: 0 1px 1px rgba(0, 0, 0, .05);
+  box-shadow: 0 2px 4px rgba(0,0,0,.08);
+  border-radius: 8px;
+  margin-bottom: 32px;
+  // max-width: 856px;
+  max-width: 100%;
+  padding: 24px;
+}
+
+.ons-figure__label {
+  color: #707071; /*text/body/secondary*/
+  margin-bottom: 8px;
+}
+
+.ons-figure__title {
+  font-size: 24px;
+  font-weight: 700;
+  margin: 0 0 .5rem;
+}
+
+.ons-chart-image {
+  margin: 24px 0;
+  padding: 0;
+}
+
+.ons-image__caption {
+    --ons-line-height: 1.25rem;
+    font-size: 0.875rem;
+    font-weight: 400;
+    line-height: 1.25rem;
+}
+
+
+
+
+
+/* FOOTER --------------------------------------- */
+
+hr.ons-footer__hr {
+  border-top: 1px solid var(--ons-color-grey-35);
+}
+
+/* Base: mobile/tablet stacked */
+.sub-footer {
+  display: block;
+  margin-top: 2rem;
+}
+
+.sub-footer__left,
+.sub-footer__right {
+  width: 100%;
+}
+
+p.ogl-text {
+  margin-top: 1rem;
+}
+
+/* Desktop: side-by-side */
+@media (min-width: 1024px) {
+  .sub-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 2rem;
+  }
+
+  .sub-footer__left {
+    width: 50%;
+  }
+
+  .sub-footer__right {
+    width: 50%;
+    text-align: right;
+  }
+}
+
+
