@@ -31,7 +31,14 @@
     <link rel="stylesheet" href="/prototypes/web26/styles.css"/>
 {% endblock %}
 
-{% block main %}
+{% block header %}
+  {% include "web26/views/partials/header.njk" %}
+{% endblock %}
+
+
+
+{% block footer %}
+  {% include "web26/views/partials/footer.njk" %}
 {% endblock %}
 
 {% block bodyEnd %}
