@@ -7,7 +7,7 @@ definePrototypeKitGulpTasks(gulp);
 /* Below are examples of tasks you can define */
 
 /* Example1: Task to build static files */
-const staticFileExtensions = ['jpg', 'jpeg', 'png', 'gif', 'mp4', 'mpeg'];
+const staticFileExtensions = ['jpg', 'jpeg', 'svg', 'png', 'gif', 'mp4', 'mpeg'];
   gulp.task('prototype-kit:build-static-files', () => {
   return gulp
     .src(`./src/**/*.{${staticFileExtensions.join(',')}}`)
