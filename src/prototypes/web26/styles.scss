@@ -28,6 +28,12 @@ Do not remove. Required for dynamic generation of survey summary page
   color: var(--ons-color-grey-75);
 }
 
+
+/* badge Official Statistics */
+.ons-hero__badge {
+  margin-top: 2rem;
+}
+
 /* SPACING classes to extend beyond xl which is only 40px --------------------------------------- */
 
 .ons-u-mb-xxl {
