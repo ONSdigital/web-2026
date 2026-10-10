@@ -8,1043 +8,134 @@ layout: web26/views/_main
 
 
 {% block pageContent %}
-<section class="ons-hero ons-grid--gutterless ons-hero--grey">
-  <div class="ons-hero__container ons-container ons-container--wide ">
-    <div class="ons-hero__details ons-grid__col ons-col-12@m col-10@s@m">
+
+<!-- start header -->
+<section class="ons-hero ons-grid--gutterless ons-hero--navy-blue">
+  <div class="ons-hero__circles" aria-hidden="true">
+    <div class="ons-hero__circle-1"></div>
+    <div class="ons-hero__circle-2"></div>
+    <div class="ons-hero__circle-3"></div>
+    <div class="ons-hero__circle-4"></div>
+    <div class="ons-hero__circle-5"></div>
+    <div class="ons-hero__circle-6"></div>
+    <div class="ons-hero__circle-7"></div>
+    <div class="ons-hero__circle-8"></div>
+    <div class="ons-hero__circle-9"></div>
+    <div class="ons-hero__circle-10"></div>
+    <div class="ons-hero__circle-11"></div>
+    <div class="ons-hero__circle-12"></div>
+  </div>
+  <div class="ons-hero__container ons-container">
+    <div class="ons-hero__details ons-grid__col ons-col-8@m col-10@s@m">
       <div class="ons-hero__content">
         <div class="ons-hero__title-container">
           <header>
             <div class="ons-hero__title-wrapper">
-              <h1 class="ons-hero__title ons-u-fs-3xl">Crime in England and Wales: year ending December 2025</h1>
-              <h2 class="ons-hero--topic">Statistical article</h2>
+              <h1 class="ons-hero__title ons-u-fs-3xl">HOME PAGE</h1>
             </div>
           </header>
-          <p class="ons-hero__text">Accredited official statistics using data from the Crime Survey for England and Wales (CSEW) and official statistics using data from police recorded crime.</p>
-        </div>
-
-        <div class="ons-hero__badge ons-u-mb-s">
-          <a href="https://uksa.statisticsauthority.gov.uk/about-the-authority/uk-statistical-system/types-of-official-statistics/"
-          target="_blank" rel="noopener noreferrer" class="ons-hero__badge-link">
-          <img src="images/logo-Official-Statistics.svg" alt="Official Statistics Badge - Accredited" class="ons-icon--logo" width="90" height="90" />
-          </a>
+          <p class="ons-hero__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
         </div>
       </div>
-      <!-- <div class="ons-hero__census-logo">
-        <svg xmlns="http://www.w3.org/2000/svg" class="ons-icon--logo" width="152"
-        height="16" viewBox="0 0 171 18" aria-hidden="true" focusable="false">
-          <title id="census-logo-alt">Census 2021 Logo</title>
-          <path
-          d="M22.9246 6.96226H31.8567C31.0755 5.26415 29.3774 4.09245 27.3906 4.09245C25.4038 4.09245 23.7057 5.26415 22.9246 6.96226ZM27.3906 18C22.4321 18 18.3906 13.9585 18.3906 9C18.3906 4.04151 22.4321 0 27.3906 0C32.3491 0 36.3906 4.04151 36.3906 9C36.3906 10.1208 35.4736 11.0377 34.3529 11.0377H22.9246C23.7057 12.7358 25.4038 13.9076 27.3906 13.9076C28.5114 13.9076 29.4284 14.8245 29.4284 15.9453C29.4284 17.083 28.5114 18 27.3906 18Z"
-          fill="#902092"/>
-          <path
-          d="M54.2716 17.8811C53.1508 17.8811 52.2338 16.9642 52.2338 15.8434V9C52.2338 6.3 50.0263 4.09245 47.3263 4.09245C44.6263 4.09245 42.4187 6.3 42.4187 9V15.8434C42.4187 16.9642 41.5018 17.8811 40.381 17.8811C39.2602 17.8811 38.3433 16.9642 38.3433 15.8434V9C38.3433 4.04151 42.3848 0 47.3433 0C52.3018 0 56.3433 4.04151 56.3433 9V15.8434C56.3093 16.9642 55.3923 17.8811 54.2716 17.8811Z"
-          fill="#902092"/>
-          <path
-          d="M83.8359 17.8811C78.8774 17.8811 74.8359 13.8396 74.8359 8.88113V2.03774C74.8359 0.916981 75.7529 0 76.8737 0C78.0114 0 78.9114 0.916981 78.9114 2.03774V8.88113C78.9114 11.5811 81.119 13.7887 83.819 13.7887C86.519 13.7887 88.7265 11.5811 88.7265 8.88113V2.03774C88.7265 0.916981 89.6435 0 90.7642 0C91.885 0 92.802 0.916981 92.802 2.03774V8.88113C92.8359 13.8396 88.8114 17.8811 83.8359 17.8811Z"
-          fill="#902092"/>
-          <path
-          d="M66.9735 7.33596C64.0867 6.72464 62.932 6.46992 62.932 5.41709C62.932 4.36426 64.4093 3.7869 66.0395 3.7869C66.9056 3.7869 67.7207 3.99067 68.3999 4.26237C68.6716 4.36425 68.9433 4.44917 69.249 4.44917C70.3018 4.44917 71.1509 3.60011 71.1509 2.54728C71.1509 1.68124 70.5905 0.934071 69.8093 0.696335C68.7905 0.32275 67.4999 0.0170898 66.0395 0.0170898C61.3527 0.0170898 58.6697 2.68312 58.6697 5.36614C58.6697 8.60954 61.6244 10.0529 65.0207 10.7831C67.6188 11.3265 68.4169 11.5473 68.4169 12.668C68.4169 13.7209 66.9395 14.2133 65.1735 14.2133C63.5773 14.2133 62.3886 13.568 61.3357 13.0246C61.3188 13.0246 61.3357 13.0246 61.3357 13.0246C61.115 12.9397 60.8263 12.8548 60.5716 12.8548C59.5018 12.8548 58.6357 13.7209 58.6357 14.7907C58.6357 15.5548 59.0773 16.2171 59.7225 16.5227C61.0301 17.2699 62.898 18.0001 65.3263 18.0001C69.6905 18.0001 72.798 15.6567 72.798 12.719C72.781 9.1869 70.3697 8.06615 66.9735 7.33596Z"
-          fill="#902092"/>
-          <path
-          d="M103.245 7.33596C100.359 6.72464 99.2038 6.46992 99.2038 5.41709C99.2038 4.36426 100.681 3.7869 102.311 3.7869C103.177 3.7869 103.993 3.99067 104.672 4.26237C104.943 4.36425 105.215 4.44917 105.521 4.44917C106.574 4.44917 107.423 3.60011 107.423 2.54728C107.423 1.68124 106.862 0.968033 106.081 0.696335C105.062 0.32275 103.772 0.0170898 102.311 0.0170898C97.6246 0.0170898 94.9416 2.68312 94.9416 5.36614C94.9416 8.60954 97.8963 10.0529 101.293 10.7831C103.891 11.3265 104.689 11.5473 104.689 12.668C104.689 13.7209 103.211 14.2133 101.445 14.2133C99.8491 14.2133 98.6265 13.551 97.5567 13.0076C97.5397 12.9907 97.5567 13.0076 97.5567 13.0076C97.3359 12.9227 97.0812 12.8548 96.8265 12.8548C95.7567 12.8548 94.8906 13.7209 94.8906 14.7907C94.8906 15.5548 95.3491 16.2001 95.9774 16.5227C97.285 17.2699 99.1529 18.0001 101.581 18.0001C105.945 18.0001 109.053 15.6567 109.053 12.719C109.053 9.1869 106.642 8.06615 103.245 7.33596Z"
-          fill="#902092"/>
-          <path
-          d="M9.50928 18C4.55079 18 0.509277 13.9585 0.509277 9C0.509277 4.04151 4.55079 0 9.50928 0C11.9885 0 14.3829 1.05283 16.081 2.86981C16.8451 3.70189 16.8112 4.99246 15.9791 5.75661C15.147 6.52076 13.8564 6.48679 13.0923 5.65472C12.1583 4.63585 10.8678 4.09245 9.50928 4.09245C6.80928 4.09245 4.60173 6.3 4.60173 9C4.60173 11.7 6.80928 13.9076 9.50928 13.9076C10.8848 13.9076 12.1583 13.3472 13.0923 12.3283C13.8564 11.4962 15.147 11.4623 15.9791 12.2264C16.8112 12.9906 16.8451 14.2811 16.081 15.1132C14.3829 16.9472 11.9885 18 9.50928 18Z"
-          fill="#902092"/>
-          <path opacity="0.7"
-          d="M114.113 16.1152V15.4529C114.113 11.9208 116.847 10.3585 119.428 9.08496C121.687 7.96421 123.708 7.11515 123.708 5.26421C123.708 3.48119 122.4 2.42836 120.21 2.42836C117.696 2.42836 116.491 3.97364 116.015 5.7227C116.015 5.80761 114.215 5.82459 114.215 4.39817C114.215 3.49817 114.742 2.42836 115.777 1.5793C116.813 0.730242 118.376 0.0849609 120.396 0.0849609C124.132 0.0849609 126.391 2.02081 126.391 5.21327C126.391 8.28685 123.945 9.50949 121.347 10.6982C119.089 11.7001 117.238 12.668 116.779 14.485C116.728 14.7227 116.677 14.9944 116.677 15.2491H125.389C126.289 15.2491 126.696 15.6227 126.696 16.3189V16.4718C126.696 17.185 126.306 17.5925 125.389 17.5925H115.811C114.606 17.5925 114.113 17.2019 114.113 16.1152ZM128.564 9.90005V8.151C128.564 3.19251 131.298 0.0849609 135.696 0.0849609C140.162 0.0849609 142.862 3.15854 142.862 8.11703V9.84911C142.862 14.8076 140.128 17.9491 135.696 17.9491C131.247 17.9491 128.564 14.8585 128.564 9.90005ZM140.145 9.98496V8.06609C140.145 4.44911 138.498 2.32647 135.713 2.32647C132.928 2.32647 131.332 4.39816 131.332 7.99817V9.93402C131.332 13.551 132.945 15.6057 135.713 15.6057C138.549 15.6397 140.145 13.585 140.145 9.98496ZM145.155 16.1152V15.4529C145.155 11.9208 147.889 10.3585 150.47 9.08496C152.728 7.96421 154.749 7.11515 154.749 5.26421C154.749 3.48119 153.442 2.42836 151.251 2.42836C148.738 2.42836 147.532 3.97364 147.057 5.7227C147.057 5.80761 145.257 5.82459 145.257 4.39817C145.257 3.49817 145.783 2.42836 146.819 1.5793C147.855 0.730242 149.417 0.0849609 151.438 0.0849609C155.174 0.0849609 157.432 2.02081 157.432 5.21327C157.432 8.28685 154.987 9.50949 152.389 10.6982C150.13 11.7001 148.279 12.668 147.821 14.485C147.77 14.7227 147.719 14.9944 147.719 15.2491H156.43C157.33 15.2491 157.738 15.6227 157.738 16.3189V16.4718C157.738 17.185 157.347 17.5925 156.43 17.5925H146.87C145.647 17.5925 145.155 17.2019 145.155 16.1152ZM161.202 16.5397V16.4038C161.202 15.6397 161.626 15.2831 162.442 15.2831H165.311V3.05666C164.276 3.87175 163.851 4.36421 163.342 4.75477C162.815 5.1793 162.391 5.33214 161.932 5.33214C161.032 5.33214 160.523 4.56798 160.523 3.66798L165.651 0.305714H166.585C167.349 0.305714 167.808 0.730245 167.808 1.54534L167.774 15.2831H170.083C170.898 15.2831 171.323 15.6227 171.323 16.4038V16.5397C171.323 17.2869 170.898 17.6095 170.083 17.6095H162.442C161.626 17.5925 161.202 17.2869 161.202 16.5397Z"
-          fill="#902092"/>
-        </svg>
-      </div> -->
-      <div class="ons-hero__information ons-u-mt-s">
-        <div class="ons-hero__panel ons-hero__panel--ons-green">
-          <h2 class="ons-u-fs-r--b ons-u-m-no">Latest release</h2>
-        </div>
-        <div class="ons-hero__link">
-          <a href="#0" aria-label="View previous release of Retail sales rise amid summer discounts and sporting events"> View previous releases</a>
-        </div>
-      </div>
-      <dl
-      class="ons-description-list ons-description-list__items ons-grid ons-grid--gutterless ons-description-list--inline ons-u-mb-no ons-u-mt-s ons-u-mt-l@l">
-        <div class="ons-description-list__item">
-          <dt class="ons-description-list__term ons-grid__col ons-col-5@xs@l">Release date:</dt>
-          <dd class="ons-description-list__value ons-grid__col ons-col-7@xs@l">23 April 2026</dd>
-        </div>
-        <div class="ons-description-list__item">
-          <dt class="ons-description-list__term ons-grid__col ons-col-5@xs@l">Next release:</dt>
-          <dd class="ons-description-list__value ons-grid__col ons-col-7@xs@l">23 July 2026</dd>
-        </div>
-        <div class="ons-description-list__item">
-          <dt class="ons-description-list__term ons-grid__col ons-col-5@xs@l">Contact:</dt>
-          <dd class="ons-description-list__value ons-grid__col ons-col-7@xs@l">
-            <a class="ons-description-list__link"
-            href="#0">ONS Centre for Crime and Justice</a>
-          </dd>
-        </div>
-      </dl>
     </div>
   </div>
 </section>
 
+<!-- end header -->
+
 <div class="ons-page__container ons-container ons-container--wide ">
   <div class="ons-grid ons-js-table-of-contents-container">
 
-  <!-- sticky left column -->
-  <div class="ons-grid__col ons-grid__col--sticky@m ons-col-4@m ons-u-pr-l ons-u-mb-xxl">
-
-    <div class="leftcol-scroll">
-
-      <aside class="ons-related-content ons-u-mb-xl" aria-label="Related content">
-        <div class="ons-related-content__section">
-          <h2 class="ons-related-content__title ons-u-fs-r--b ons-u-mb-xs" id="related-help-with-the-census">Explore data</h2>
-          <div class="ons-related-content__content">
-            <nav class="ons-related-content__navigation" aria-labelledby="related-help-with-the-census">
-              <ul class="ons-list ons-list--bare">
-                <li class="ons-list__item">
-                  <a href="#0" class="ons-list__link">View all data used in this article</a>
-                </li>
-              </ul>
-            </nav>
-          </div>
-        </div>
-      </aside>
-
-      <aside class="ons-table-of-contents-container" aria-label="Table of contents">
-        <nav class="ons-table-of-contents" aria-label="Sections in this page">
-          <h2 class="ons-table-of-contents__title ons-u-fs-r--b ons-u-mb-s">Contents</h2>
-          <ol class="ons-list ons-u-mb-l ons-list--toc">
-            <li class="ons-list__item">
-              <a href="#section1" class="ons-list__link">Main points</a>
-            </li>
-            <li class="ons-list__item">
-              <a href="#section2" class="ons-list__link">Things you need to know about this release</a>
-            </li>
-            <li class="ons-list__item">
-              <a href="#section3" class="ons-list__link">Trends across main crime types</a>
-            </li>
-            <li class="ons-list__item">
-              <a href="#section4" class="ons-list__link">Homicide</a>
-            </li>
-            <li class="ons-list__item">
-              <a href="#section5" class="ons-list__link">Knife or sharp instrument offences</a>
-            </li>
-            <li class="ons-list__item">
-              <a href="#section6" class="ons-list__link">Offences involving firearms</a>
-            </li>
-            <li class="ons-list__item">
-              <a href="#section7" class="ons-list__link">Violence with or without injury</a>
-            </li>
-            <li class="ons-list__item">
-              <a href="#section8" class="ons-list__link">Domestic abuse</a>
-            </li>
-            <li class="ons-list__item">
-              <a href="#section9" class="ons-list__link">Sexual offences</a>
-            </li>
-            <li class="ons-list__item">
-              <a href="#section10" class="ons-list__link">Stalking and harassment</a>
-            </li>
-            <li class="ons-list__item">
-              <a href="#section11" class="ons-list__link">Combined measure of domestic abuse, sexual assault and stalking</a>
-            </li>
-            <li class="ons-list__item">
-              <a href="#section12" class="ons-list__link">Robbery</a>
-            </li>
-            <li class="ons-list__item">
-              <a href="#section13" class="ons-list__link">Theft offences</a>
-            </li>
-            <li class="ons-list__item">
-              <a href="#section14" class="ons-list__link">Criminal damage</a>
-            </li>
-            <li class="ons-list__item">
-              <a href="#section15" class="ons-list__link">Fraud</a>
-            </li>
-            <li class="ons-list__item">
-              <a href="#section16" class="ons-list__link">Computer misuse</a>
-            </li>
-            <li class="ons-list__item">
-              <a href="#section17" class="ons-list__link">Anti-social behaviour</a>
-            </li>
-            <li class="ons-list__item">
-              <a href="#section18" class="ons-list__link">Data on crime in England and Wales</a>
-            </li>
-            <li class="ons-list__item">
-              <a href="#section19" class="ons-list__link">Glossary</a>
-            </li>
-            <li class="ons-list__item">
-              <a href="#section20" class="ons-list__link">Data sources and quality</a>
-            </li>
-            <li class="ons-list__item">
-              <a href="#section21" class="ons-list__link">Related links</a>
-            </li>
-            <li class="ons-list__item">
-              <a href="#section22" class="ons-list__link">Cite this page</a>
-            </li>
-            <li class="ons-list__item">
-              <a href="#section23" class="ons-list__link">Contact details</a>
-            </li>
-          </ol>
-        </nav>
-      </aside>
-
-      
-
-      <!-- Print button wrapper -->
-      <div class="ons-u-mb-xl">
-        <button type="button"
-          class="ons-btn ons-btn--print ons-btn--small ons-btn--secondary ons-u-d-no ons-js-print-btn">
-          <span class="ons-btn__inner">
-            <svg class="ons-icon ons-u-mr-2xs" viewBox="0 0 20 16" xmlns="http://www.w3.org/2000/svg"
-              focusable="false" fill="currentColor" role="img" aria-hidden="true">
-              <path d="M17 4H3C1.3 4 0 5.2 0 6.8v5.5h4V16h12v-3.7h4V6.8C20 5.2 18.7 4 17 4zm-3 10H6V9h8v5zm3-6a1 1 0 1 1 0-2 1 1 0 0 1 0 2zm-1-8H4v3h12V0z" />
-            </svg>
-            <span class="ons-btn__text">Print or save this page</span>
-          </span>
-        </button>
-      </div>
-
-    </div> <!-- end .leftcol-scroll -->
-  </div> <!-- end sticky column -->
-
-
-
+    <!-- left column -->
+    <div class="ons-grid__col ons-grid__col--sticky@m ons-col-4@m ons-u-pr-l ons-u-mb-xxl">
+      <ul>
+        <li>cheese 1</li>
+        <li>cheese 2</li>
+        <li>cheese 3</li>
+        <li>cheese 4</li>
+      </ul>
+    </div> <!-- end leftcol -->
 
     <!-- main content -->
     <div class="ons-grid__col ons-col-8@m ons-u-mb-xxl">
-
-      <section id="section1" class="ons-u-mb-xl">
-        <div class="ons-text-container">
-          <h2 class="ons-u-fs-xl ons-u-mt-2xl">1. Main points</h2>
-          <p>Crime against individuals and households has generally decreased over the last 10 years with some notable exceptions, such as fraud. Over the last year, estimates from the Crime Survey for England and Wales (CSEW) year ending (YE) December 2025 showed that:</p>
-          <ul class="ons-list">
-            <li class="ons-list__item">there was no change in CSEW headline crime compared with the YE December 2024 survey (around 9.6 million incidents); CSEW headline crime includes theft, robbery, criminal damage, fraud, computer misuse, and violence with or without injury</li>
-            <li class="ons-list__item">there were an estimated 2.6 million theft incidents, an 11% decrease compared with last year’s survey (2.9 million incidents); this was mainly because of a 22% fall in domestic burglary (to 327,000 incidents) and a 14% fall in vehicle-related theft (to 596,000 incidents)</li>
-            <li class="ons-list__item">there were an estimated 4.4 million fraud incidents, no statistically significant change compared with last year’s survey (4.1 million incidents); however, levels were 30% higher compared with the earliest comparable year, YE March 2017 CSEW (around 3.4 million incidents)</li>
-          </ul>
-          <p>Experiences of domestic abuse, sexual assault, stalking, and harassment from the CSEW are presented separately as prevalence estimates (the proportion of all people who were victims in the previous 12 months) in our statistics. Latest data from the YE March 2025 CSEW showed no statistically significant change in these estimates compared with the YE March 2024 survey.</p>
-          <p>Police recorded crime does not tend to be a good indicator of general trends in crime, because of changes in how crimes are recorded over time. However, it can give more insight into lower-volume, higher-harm offences that are reported to the police, including those that the survey does not cover or capture well. Data for YE December 2025 showed that:</p>
-          <ul class="ons-list">
-            <li class="ons-list__item">the number of homicides decreased by 6% (to 503 offences) compared with YE December 2024 (534 offences)</li>
-            <li class="ons-list__item">offences involving knives or sharp instruments decreased by 10% (to 49,151 offences) compared with YE December 2024 (54,548 offences); falls were seen across most regions in England and Wales</li>
-            <li class="ons-list__item">offences involving firearms decreased by 9% (to 4,753 offences) compared with YE December 2024 (5,241 offences); this was the lowest figure since current police recording practices began in YE March 2003</li>
-            <li class="ons-list__item">the number of robbery of personal property offences decreased by 12% (to 58,508 offences) compared with the previous year, however, overall robbery increased by 4% (to 84,666 offences) mainly because of improvements to recording practices for robbery of business property</li>
-            <li class="ons-list__item">following recent rises in shoplifting, there was a 1% decrease (to 509,566 offences) in YE December 2025 compared with the previous year (516,611 offences)</li>
-          </ul>
-        </div>
-      </section>
-
-      <section id="section2" class="ons-u-mb-xl">
-        <div class="ons-text-container">
-          <h2 class="ons-u-fs-xl ons-u-mt-2xl">2. Things you need to know about this release</h2>
-          <p>The Crime Survey for England and Wales (CSEW) is an interviewer-administered face-to-face survey asking people (aged 16 years and over and resident in households) about their experiences of crime in the past year. It provides a reliable measure of crime trends for the population, and the offence types it covers. This is because it is unaffected by police reporting or recording changes.</p>
-          <p>The survey excludes crimes against commercial or public sector bodies, tourists, or those living in communal establishments like care homes, student halls of residence, and prisons. The survey does not cover crimes where there is not a specific victim, such as drug possession, and other crimes against the state.</p>
-          <p>Estimates of CSEW headline crime are reported as both incidents (the estimated number of crimes) and prevalence (the estimated proportion of the population that were victims).</p>
-          <p>Domestic abuse, sexual assault, stalking, and harassment are not included in CSEW headline crime figures. They are collected in a separate self-completion section of the survey (except harassment) to ensure respondent privacy. Prevalence estimates only are reported separately in <a href="#section8">Section 8: Domestic abuse</a>, <a href="#section9">Section 9: Sexual offences</a>, and <a href="#section10">Section 10: Stalking and harassment</a>.</p>
-          <p>In this bulletin, the latest estimates for these crime types are for year ending (YE) March 2025. This is because of recent and ongoing CSEW questionnaire development across these topics. The next set of estimates for these experiences will be released in the YE March 2026 bulletin. Further information on planned improvements to crime statistics are available in our <a href="#" aria-disabled="true" class="ons-link--disabled">Improving crime statistics for England and Wales - progress update: July 2025</a>.</p>
-          <p>Police recorded crime figures cover a wider range of offences and populations, but do not capture all crimes. For example, they include those aged under 16 years, residents of institutions, tourists, crimes against commercial bodies, and crimes against society.</p>
-          <p>Figures are restricted to a subset of notifiable offences that have been reported to and recorded by the police, as described in the Home Office's <a href="#" aria-disabled="true" class="ons-link--disabled">Crime Recording Rules for frontline officers and staff guidance</a>. Changes in recording practices have affected the reliability of these figures, particularly for violent crime. This makes them better indicators of police activity than crime trends.</p>
-          <p>Report Fraud, a new national fraud and cybercrime reporting system, was launched by the City of London Police (CoLP) on 4 December 2025 to replace Action Fraud and the National Fraud Intelligence Bureau (NFIB). The new system will improve the quality, consistency and transparency of fraud and cybercrime data. The Home Office and ONS have agreed that while the CoLP is fully transitioning to using this new system that they can temporarily suspend their supply of recorded cybercrime and fraud data. This is to enable the CoLP to give priority to aligning the legacy Action Fraud data against Report Fraud to ensure consistency whilst also improving the experience for victims reporting cybercrime and fraud incidents and providing essential information needed for the police to manage investigations. Therefore, recorded cybercrime and fraud data are not presented in this bulletin.</p>
-          <p>Estimates of fraud and computer misuse from our preferred source, the CSEW, are unaffected and continue to be presented.</p>
-          <p>For further information, see <a href="#section20">Section 20: Data sources and quality</a>.</p>
-        </div>
-      </section>
-
-      <section id="section3" class="ons-u-mb-xl">
-        <div class="ons-text-container">
-          <h2 class="ons-u-fs-xl ons-u-mt-2xl">3. Trends across main crime types</h2>
-          <p>Crime Survey for England and Wales (CSEW) and police recorded crime data together give a fuller picture of crimes experienced by individuals and households (Table 1). The CSEW is better for tracking long-term trends in:</p>
-          <ul class="ons-list">
-            <li>violence with or without injury</li>
-            <li>theft offences</li>
-            <li>criminal damage</li>
-            <li>fraud</li>
-            <li>computer misuse</li>
-          </ul>
-
-          <p>Police data are preferred for:</p>
-          <ul class="ons-list">
-            <li>homicide</li>
-            <li>offences involving weapons</li>
-            <li>robbery</li>
-          </ul>
-        </div>
-
-        <!-- Figure 1 -->
-        <div class="ons-chartbox">
-          <figure class="ons-chart">
-            <figcaption>
-              <p class="ons-figure__label ons-u-fs-r--1">Figure 1</p>
-              <h3 class="ons-figure__title ons-u-fs-r">Number of crime incidents by main crime types, to year ending December 2025</h3>
-              <p class="ons-figure__subtitle ons-u-fs-r--1">Crime Survey for England and Wales estimates</p>
-            </figcaption>
-
-            <figure class="ons-chart-image">
-              <img src="/prototypes/assets/fig-1-crime.png" alt="Figure 1 crime chart">
-              <figcaption class="ons-image__caption">Source - Annual Population Survey from the Office for National Statistics</figcaption>
-            </figure>
-            <div class="ons-chart_download">
-              <span class=" ons-u-fs-r--b">Download Figure 1 data: </span>
-              <div class="ons-list ons-list--p">
-                <p class="ons-list__item">
-                  <a href="#0" class="ons-list__link">Excel spreadsheet (XLSX format, 25KB)</a>
-                </p>
-              </div>
+      <ul class="ons-document-list">
+        <li class="ons-document-list__item ons-document-list__item--featured">
+          <div class="ons-document-list__item-content">
+            <div class="ons-document-list__item-header ons-document-list__item-header--reverse">
+              <h2 class="ons-document-list__item-title ons-u-fs-m ons-u-mt-no ons-u-mb-2xs">
+                <a href="crime.html">Crime and justice </a>
+              </h2>
+              <ul class="ons-document-list__item-metadata ons-u-mb-2xs">
+                <li class="ons-document-list__item-attribute">
+                  <span class="ons-u-fw-b">Statistical article</span>
+                </li>
+              </ul>
             </div>
-          </figure>
-
-          <div id="details-example" class="ons-details ons-js-details ons-details--initialised" role="group">
-            <div class="ons-details__heading ons-js-details-heading" role="link" aria-controls="details-example" tabindex="0" aria-expanded="false" data-ga-action="Close panel" data-ga-interaction-value="Close panel">
-              <h2 class="ons-details__title ons-u-fs-r--b">Notes</h2>
-              <span class="ons-details__icon">
-                <svg class="ons-icon" viewBox="0 0 8 13" xmlns="http://www.w3.org/2000/svg" focusable="false" fill="currentColor" role="img" aria-hidden="true">
-                  <path d="M5.74,14.28l-.57-.56a.5.5,0,0,1,0-.71h0l5-5-5-5a.5.5,0,0,1,0-.71h0l.57-.56a.5.5,0,0,1,.71,0h0l5.93,5.93a.5.5,0,0,1,0,.7L6.45,14.28a.5.5,0,0,1-.71,0Z" transform="translate(-5.02 -1.59)"></path>
-                </svg>
-              </span>
-            </div>
-            <div id="details-example-content" class="ons-details__content ons-js-details-content" aria-hidden="true">
-              <ol class="ons-list">
-                <li class="ons-list__item">CSEW data cover people aged 16 years and over. PRC data include crimes against individuals (including children), households, businesses, and society.</li>
-              </ol>
+            <div class="ons-document-list__item-description">
+              <p>Figures on crime levels and trends for England and Wales based primarily on two sets of statistics: the Crime Survey for England and Wales (CSEW) and police recorded crime data.</p>
+              <p>View all <a href="#0">datasets</a> or <a href="#0">publications</a> related to <a href="#0">Crime and justice</a></p>
             </div>
           </div>
-        </div><!-- end fig 1 -->
-
-        <div class="ons-text-container">
-          <p>Since the mid-1990s, the CSEW has shown long-term decreases in the number of incidents of theft, criminal damage, and violence with or without injury. Fraud and computer misuse estimates are only available from year ending (YE) March 2017 onwards. While the number of fraud incidents has increased with some fluctuations over this time period, there has been a general decline in computer misuse incidents. For more information, see Table A1 in our <a href="#" aria-disabled="true" class="ons-link--disabled">Crime in England and Wales: Appendix tables dataset</a>.</p>
-          <p>There were an estimated 9.6 million incidents of CSEW headline crime in the YE December 2025 survey, no statistically significant change compared with the YE December 2024 survey (9.6 million incidents).</p>
-          <p>Providing context from a longer time period, CSEW headline crime remains 15% lower than in the YE March 2017 survey (11.2 million incidents), when fraud and computer misuse were first included.</p>
-        </div>
-
-        <!-- Figure 2 -->
-        <div class="ons-chartbox">
-          <figure class="ons-chart">
-            <figcaption>
-              <p class="ons-figure__label ons-u-fs-r--1">Figure 2</p>
-              <h3 class="ons-figure__title ons-u-fs-r">There was no statistically significant change in Crime Survey for England and Wales headline crime compared with the previous year</h3>
-              <p class="ons-figure__subtitle ons-u-fs-r--1">Annual estimates, England and Wales</p>
-            </figcaption>
-
-            <figure class="ons-chart-image">
-              <img src="/prototypes/assets/fig-2-crime.png" alt="Figure 2 crime chart">
-              <figcaption class="ons-image__caption">Crime Survey for England and Wales (CSEW) from the Office for National Statistics</figcaption>
-            </figure>
-            <div class="ons-chart_download">
-              <span class=" ons-u-fs-r--b">Download Figure 2 data: </span>
-              <div class="ons-list ons-list--p">
-                <p class="ons-list__item">
-                  <a href="#0" class="ons-list__link">Excel spreadsheet (XLSX format, 25KB)</a>
-                </p>
-              </div>
+        </li>
+        <li class="ons-document-list__item">
+          <div class="ons-document-list__item-content">
+            <div class="ons-document-list__item-header">
+              <h2 class="ons-document-list__item-title ons-u-fs-m ons-u-mt-no ons-u-mb-2xs">
+                <a href="cpi.html">CPI</a>
+              </h2>
+              <ul class="ons-document-list__item-metadata ons-u-mb-2xs">
+                <li class="ons-document-list__item-attribute">
+                  <span class="ons-u-fw-b">Released: </span><time datetime="2021-02-18">18 February 2026</time>
+                </li>
+                <li class="ons-document-list__item-attribute">
+                  <span class="ons-u-fw-b">Statistical article</span>
+                </li>
+              </ul>
             </div>
-          </figure>
-
-          <div id="details-example" class="ons-details ons-js-details ons-details--initialised" role="group">
-            <div class="ons-details__heading ons-js-details-heading" role="link" aria-controls="details-example" tabindex="0" aria-expanded="false" data-ga-action="Close panel" data-ga-interaction-value="Close panel">
-              <h2 class="ons-details__title ons-u-fs-r--b">Notes</h2>
-              <span class="ons-details__icon">
-                <svg class="ons-icon" viewBox="0 0 8 13" xmlns="http://www.w3.org/2000/svg" focusable="false" fill="currentColor" role="img" aria-hidden="true">
-                  <path d="M5.74,14.28l-.57-.56a.5.5,0,0,1,0-.71h0l5-5-5-5a.5.5,0,0,1,0-.71h0l.57-.56a.5.5,0,0,1,.71,0h0l5.93,5.93a.5.5,0,0,1,0,.7L6.45,14.28a.5.5,0,0,1-.71,0Z" transform="translate(-5.02 -1.59)"></path>
-                </svg>
-              </span>
-            </div>
-            <div id="details-example-content" class="ons-details__content ons-js-details-content" aria-hidden="true">
-              <ol class="ons-list">
-                <li class="ons-list__item">Data on the chart cover different time periods: 1981 to 1999 data are for calendar years.</li>
-                <li class="ons-list__item">From year ending (YE) March 2002 onwards, data are for the 12 months before the interview.</li>
-                <li class="ons-list__item">Estimates for YE March 2021 and YE March 2022 are not available because of the suspension of face-to-face interviewing during the coronavirus (COVID-19) pandemic.</li>
-              </ol>
+            <div class="ons-document-list__item-description">
+              <p>CPI data for England and Wales.</p>
             </div>
           </div>
-        </div><!-- end fig 2 -->
-
-        <div class="ons-text-container">
-          <p>We recently published more detailed information on the nature of CSEW incidents in our <a href="#" aria-disabled="true" class="ons-link--disabled">Nature of crime tables England and Wales: year ending March 2025</a>.</p>
-
-          <div class="ons-panel ons-panel--warn ons-panel--no-title">
-            <span class="ons-panel__icon" aria-hidden="true">!</span>
-            <span class="ons-panel__assistive-text ons-u-vh">Important Information</span>
-            <div class="ons-panel__body">
-              Trends in police recorded crime are affected by improvements to recording practices and variations in police activity. These effects are more pronounced for some crime types. For further information, see <a href="#section20">Section 20: Data sources and quality</a>.
+        </li>
+        <li class="ons-document-list__item">
+          <div class="ons-document-list__item-content">
+            <div class="ons-document-list__item-header">
+              <h2 class="ons-document-list__item-title ons-u-fs-m ons-u-mt-no ons-u-mb-2xs">
+                <a href="gdp.html">GDP</a>
+              </h2>
+              <ul class="ons-document-list__item-metadata ons-u-mb-2xs">
+                <li class="ons-document-list__item-attribute">
+                  <span class="ons-u-fw-b">Released: </span><time datetime="2019-12-01">2 April 2026</time>
+                </li>
+                <li class="ons-document-list__item-attribute">
+                  <span class="ons-u-fw-b">Statistical article</span>
+                </li>
+              </ul>
+            </div>
+            <div class="ons-document-list__item-description">
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
             </div>
           </div>
-
-          <p>In YE December 2025, the police recorded around 5.2 million crimes (excluding fraud and computer misuse), a 2% decrease compared with last year (5.3 million), but up from 3.6 million in YE March 2015.</p>
-          <p>Police recorded crime is not considered a reliable indicator of overall crime trends because of changes in police activity and recording practices. Increases in volume over the last 10 years have been largely influenced by improvements in recording standards. For further information, see His Majesty's Inspectorate of Constabulary and Fire &amp; Rescue Services' report, <a href="#" aria-disabled="true" class="ons-link--disabled">How effectively do the police record crime?</a>.</p>
-          <p>Police recorded crime data can give more insight into lower-volume, higher-harm offences reported to the police, including those that the survey does not cover or capture well. This includes homicide, offences involving weapons, and robbery. These figures are reported in <a href="#section4">Section 4: Homicide</a>, <a href="#section5">Section 5: Knife and sharp instrument offences</a>, <a href="#section6">Section 6: Offences involving firearms</a>, and <a href="#section12">Section 12: Robbery</a>.</p>
-          <p>Information on the investigative outcomes of crimes recorded by the police can be found in the Home Office's <a href="#" aria-disabled="true" class="ons-link--disabled">Crime outcomes in England and Wales publication</a>.</p>
-        </div>
-
-      </section>
-
-      <section id="section4" class="ons-u-mb-xl">
-        <div class="ons-text-container">
-          <h2 class="ons-u-fs-xl ons-u-mt-2xl">4. Homicide</h2>
-          <p>The police recorded 503 homicide offences in year ending (YE) December 2025, a 6% decrease from 534 offences in the previous year. This was because of a 21% fall in knife or sharp instrument homicides to 172 offences compared with the previous year (217 offences). The homicide rate was 8.1 per 1 million people, down from 8.9 in YE December 2024.</p>
-        </div>
-
-        <!-- Figure 3 -->
-        <div class="ons-chartbox">
-          <figure class="ons-chart">
-            <figcaption>
-              <p class="ons-figure__label ons-u-fs-r--1">Figure 3</p>
-              <h3 class="ons-figure__title ons-u-fs-r">Homicide decreased by 6% in the last year</h3>
-              <p class="ons-figure__subtitle ons-u-fs-r--1">England and Wales, year ending (YE) March 2003 to YE December 2025</p>
-            </figcaption>
-
-            <figure class="ons-chart-image">
-              <img src="/prototypes/assets/fig-3-crime.png" alt="Figure 3 crime chart">
-              <figcaption class="ons-image__caption">Source: Police recorded crime from the Home Office</figcaption>
-            </figure>
-            <div class="ons-chart_download">
-              <span class=" ons-u-fs-r--b">Download Figure 3 data: </span>
-              <div class="ons-list ons-list--p">
-                <p class="ons-list__item">
-                  <a href="#0" class="ons-list__link">Excel spreadsheet (XLSX format, 25KB)</a>
-                </p>
-              </div>
-            </div>
-          </figure>
-
-          <div id="details-example" class="ons-details ons-js-details ons-details--initialised" role="group">
-            <div class="ons-details__heading ons-js-details-heading" role="link" aria-controls="details-example" tabindex="0" aria-expanded="false" data-ga-action="Close panel" data-ga-interaction-value="Close panel">
-              <h2 class="ons-details__title ons-u-fs-r--b">Notes</h2>
-              <span class="ons-details__icon">
-                <svg class="ons-icon" viewBox="0 0 8 13" xmlns="http://www.w3.org/2000/svg" focusable="false" fill="currentColor" role="img" aria-hidden="true">
-                  <path d="M5.74,14.28l-.57-.56a.5.5,0,0,1,0-.71h0l5-5-5-5a.5.5,0,0,1,0-.71h0l.57-.56a.5.5,0,0,1,.71,0h0l5.93,5.93a.5.5,0,0,1,0,.7L6.45,14.28a.5.5,0,0,1-.71,0Z" transform="translate(-5.02 -1.59)"></path>
-                </svg>
-              </span>
-            </div>
-            <div id="details-example-content" class="ons-details__content ons-js-details-content" aria-hidden="true">
-              <ol class="ons-list">
-                <li class="ons-list__item">Notable incidents affected offences: 173 victims of Harold Shipman in 2003; 52 victims of London bombings in July 2005; 96 victims of Hillsborough in April 2016; 22 victims of Manchester Arena bombing in May 2017; 39 people found dead inside lorry in Essex in October 2019.</li>
-                <li class="ons-list__item">Homicide data in police recorded crime data differ from the Home Office Homicide Index.</li>
-              </ol>
+        </li>
+        <li class="ons-document-list__item">
+          <div class="ons-document-list__item-content">
+            <div class="ons-document-list__item-header">
+              <h2 class="ons-document-list__item-title ons-u-fs-m ons-u-mt-no ons-u-mb-2xs">
+                <a href="#0">Retail industry</a>
+              </h2>
+              <ul class="ons-document-list__item-metadata ons-u-mb-no">
+                <li class="ons-document-list__item-attribute">
+                  <span class="ons-u-fw-b">Released: </span><time datetime="2017-04-20">20 July 2025</time>
+                </li>
+                <li class="ons-document-list__item-attribute">
+                  <span class="ons-u-fw-b">Statistical article</span>
+                  <span>Ref 008052</span>
+                </li>
+              </ul>
             </div>
           </div>
-        </div><!-- end fig 3 -->
-
-        <div class="ons-text-container">
-          <p>For the latest analysis on homicide offences held within the Home Office Homicide Index, see our <a href="#" aria-disabled="true" class="ons-link--disabled">Homicide in England and Wales: year ending March 2025 article</a>. As the Homicide Index takes account of court outcomes, figures from this source will differ from the main police recorded crime collection and are not directly comparable. Figures based on the Homicide Index are <a href="#" aria-disabled="true" class="ons-link--disabled">accredited official statistics</a>.</p>
-        </div>
-      </section>
-
-      <section id="section5" class="ons-u-mb-xl">
-        <div class="ons-text-container">
-          <h2 class="ons-u-fs-xl ons-u-mt-2xl">5. Knife or sharp instrument offences</h2>
-          <p>Offences involving a knife or sharp instrument (knife-enabled crime) include offences where a knife or sharp instrument has been used to injure a victim, attempt to injure, or used as a threat. This includes offences where the weapon may not have been seen, but was believed to be present, at the time of the offence by the victim or another witness.</p>
-          <p>Knife-enabled crime recorded by the police decreased by 10% in year ending (YE) December 2025 (to 49,151 offences), compared with YE December 2024 (54,548 offences). Levels remained 11% lower than YE March 2020 (55,170 offences). Increases between YE March 2015 and YE March 2020 is partly because of improvements in police recording practices.</p>
-          <p>Most knife-enabled crimes were categorised as assault with injury and assault with intent to cause serious harm (44%) and robbery (40%) offences. Fewer than 1% of knife-enabled crimes were homicide offences (0.3%).</p>
-        </div>
-
-        <!-- Figure 4 -->
-        <div class="ons-chartbox">
-          <figure class="ons-chart">
-            <figcaption>
-              <p class="ons-figure__label ons-u-fs-r--1">Figure 4</p>
-              <h3 class="ons-figure__title ons-u-fs-r">Knife-enabled crime recorded by the police decreased in the last year</h3>
-              <p class="ons-figure__subtitle ons-u-fs-r--1">England and Wales (excluding Greater Manchester), year ending (YE) March 2011 to YE December 2025</p>
-            </figcaption>
-
-            <figure class="ons-chart-image">
-              <img src="/prototypes/assets/fig-4-crime.png" alt="Figure 4 crime chart">
-              <figcaption class="ons-image__caption">Source: Police recorded crime from the Home Office</figcaption>
-            </figure>
-            <div class="ons-chart_download">
-              <span class=" ons-u-fs-r--b">Download Figure 4 data: </span>
-              <div class="ons-list ons-list--p">
-                <p class="ons-list__item">
-                  <a href="#0" class="ons-list__link">Excel spreadsheet (XLSX format, 25KB)</a>
-                </p>
-              </div>
-            </div>
-          </figure>
-
-          <div id="details-example" class="ons-details ons-js-details ons-details--initialised" role="group">
-            <div class="ons-details__heading ons-js-details-heading" role="link" aria-controls="details-example" tabindex="0" aria-expanded="false" data-ga-action="Close panel" data-ga-interaction-value="Close panel">
-              <h2 class="ons-details__title ons-u-fs-r--b">Notes</h2>
-              <span class="ons-details__icon">
-                <svg class="ons-icon" viewBox="0 0 8 13" xmlns="http://www.w3.org/2000/svg" focusable="false" fill="currentColor" role="img" aria-hidden="true">
-                  <path d="M5.74,14.28l-.57-.56a.5.5,0,0,1,0-.71h0l5-5-5-5a.5.5,0,0,1,0-.71h0l.57-.56a.5.5,0,0,1,.71,0h0l5.93,5.93a.5.5,0,0,1,0,.7L6.45,14.28a.5.5,0,0,1-.71,0Z" transform="translate(-5.02 -1.59)"></path>
-                </svg>
-              </span>
-            </div>
-            <div id="details-example-content" class="ons-details__content ons-js-details-content" aria-hidden="true">
-              <ol class="ons-list">
-                <li class="ons-list__item">Greater Manchester Police (GMP) reviewed their recording of knife-enabled crime in 2017. It showed that they were undercounting these offences. Previous data were not revised. Therefore, data from GMP are excluded to allow for comparison over time.</li>
-                <li class="ons-list__item">An adjustment has been made to data prior to YE March 2020 for police forces who are now using the NDQIS tool and the total for England and Wales. Please see our methodology note <a href="#" aria-disabled="true" class="ons-link--disabled">Police recorded offences involving knives or sharp instruments: methodology changes</a>.</li>
-                <li class="ons-list__item">Other selected offences include rape, attempted murder, homicide, and sexual assault.</li>
-              </ol>
-            </div>
-          </div>
-        </div><!-- end fig 4 -->
-
-        <div class="ons-text-container">
-          <p>Most knife-enabled crime takes place in metropolitan areas across England and Wales. The Metropolitan Police Service (MPS) recorded 28% of all knife-enabled offences, the West Midlands Police recorded 8%, and Greater Manchester Police recorded 6%. The MPS recorded a 17% decrease in knife-enabled crime compared with the previous year (to 13,994 offences), West Midlands police recorded a 15% decrease (to 3,946 offences), and Greater Manchester Police recorded a 17% decrease (to 2,890 offences).</p>
-          <p>The latest provisional admissions data for NHS hospitals in England and Wales showed a 10% decrease in the number of admissions for assault by a sharp object in YE December 2025 (to 3,326 admissions) compared with YE December 2024 (3,706 admissions)</p>
-        </div>
-      </section>
-
-      <section id="section6" class="ons-u-mb-xl">
-        <div class="ons-text-container">
-          <h2 class="ons-u-fs-xl ons-u-mt-2xl">6. Offences involving firearms</h2>
-          <p>Offences involving firearms cover various weapon types, from imitation firearms to handguns and shotguns. Police recorded offences decreased by 9% (to 4,753 offences) in year ending (YE) December 2025 compared with YE December 2024 (5,241 offences).</p>
-          <p>The largest falls were in offences involving handguns, which decreased by 18% (to 1,479 offences) and offences involving unidentified firearms, which fell by 13% (to 692 offences). Firearm offence levels were at their lowest since current police recording practices began in YE March 2003, and were much lower than their peak in YE March 2006 (11,088 offences).</p>
-          <p>Imitation firearms like replica weapons and BB guns were the most used, followed by handguns. In the last year, 38% of these offences involved imitation firearms, and 31% involved handguns.</p>
-        </div>
-
-        <!-- Figure 5 -->
-        <div class="ons-chartbox">
-          <figure class="ons-chart">
-            <figcaption>
-              <p class="ons-figure__label ons-u-fs-r--1">Figure 5</p>
-              <h3 class="ons-figure__title ons-u-fs-r">Police recorded firearms offences saw a 9% decrease compared with the previous year</h3>
-              <p class="ons-figure__subtitle ons-u-fs-r--1">England and Wales, year ending (YE) March 2003 to YE December 2025</p>
-            </figcaption>
-
-            <figure class="ons-chart-image">
-              <img src="/prototypes/assets/fig-5-crime.png" alt="Figure 5 crime chart">
-              <figcaption class="ons-image__caption">Source: Police recorded crime from the Home Office</figcaption>
-            </figure>
-            <div class="ons-chart_download">
-              <span class=" ons-u-fs-r--b">Download Figure 5 data: </span>
-              <div class="ons-list ons-list--p">
-                <p class="ons-list__item">
-                  <a href="#0" class="ons-list__link">Excel spreadsheet (XLSX format, 32KB)</a>
-                </p>
-              </div>
-            </div>
-          </figure>
-
-          <div id="details-example" class="ons-details ons-js-details ons-details--initialised" role="group">
-            <div class="ons-details__heading ons-js-details-heading" role="link" aria-controls="details-example" tabindex="0" aria-expanded="false" data-ga-action="Close panel" data-ga-interaction-value="Close panel">
-              <h2 class="ons-details__title ons-u-fs-r--b">Notes</h2>
-              <span class="ons-details__icon">
-                <svg class="ons-icon" viewBox="0 0 8 13" xmlns="http://www.w3.org/2000/svg" focusable="false" fill="currentColor" role="img" aria-hidden="true">
-                  <path d="M5.74,14.28l-.57-.56a.5.5,0,0,1,0-.71h0l5-5-5-5a.5.5,0,0,1,0-.71h0l.57-.56a.5.5,0,0,1,.71,0h0l5.93,5.93a.5.5,0,0,1,0,.7L6.45,14.28a.5.5,0,0,1-.71,0Z" transform="translate(-5.02 -1.59)"></path>
-                </svg>
-              </span>
-            </div>
-            <div id="details-example-content" class="ons-details__content ons-js-details-content" aria-hidden="true">
-              <ol class="ons-list">
-                <li class="ons-list__item">Excludes conventional air weapons, such as air rifles, and offences recorded by the British Transport Police.</li>
-                <li class="ons-list__item">Includes crimes where a firearm was fired, used as a blunt instrument, or used as a threat.</li>
-                <li class="ons-list__item">Imitation firearms include replica weapons and low-powered guns that fire small plastic pellets, such as BB guns and soft air weapons.</li>
-                <li class="ons-list__item">Other firearms include CS gas and pepper spray and stun guns.</li>
-              </ol>
-            </div>
-          </div>
-        </div><!-- end fig 5 -->
-
-        <div class="ons-text-container">
-          <p>More detailed data on offences involving firearms are available for YE March 2025 in our <a href="#" aria-disabled="true" class="ons-link--disabled">Offences involving the use of weapons: data tables</a>.</p>
-        </div>
-      </section>
-
-      <section id="section7" class="ons-u-mb-xl">
-        <div class="ons-text-container">
-          <h2 class="ons-u-fs-xl ons-u-mt-2xl">7. Violence with or without injury</h2>
-          <p>The interviewer-administered parts of the Crime Survey for England and Wales (CSEW) give the best view of trends in violence, with or without injury, for the household population. It provides a good indication of the prevalence of violence, with or without injury, where the perpetrator is an acquaintance or a stranger (non-domestic violence). However, it underestimates domestic violence because victims may not disclose it to interviewers.</p>
-          <p>Our preferred prevalence estimate can be found in <a href="#section8">Section 8: Domestic abuse</a>. For information on sexual offences, stalking and harassment, see <a href="#section9">Section 9: Sexual offences</a>, and <a href="#section10">Section 10: Stalking and harassment</a>.</p>
-          <p>In year ending (YE) December 2025 CSEW, people aged 16 years and over experienced an estimated 1.1 million incidents of violence with or without injury. There was no statistically significant change compared with the previous year's survey. However, this was 36% lower than estimated a decade ago (1.7 million incidents in YE March 2015) and 75% lower than its peak in YE December 1995 (4.5 million incidents).</p>
-          <p>In YE December 2025, around 0.7% of people aged 16 years and over reported being a victim of violence, with or without injury, where the perpetrator was a stranger; 0.4% reported being a victim where the perpetrator was an acquaintance. There was no statistically significant change compared with the previous year's survey.</p>
-        </div>
-
-        <!-- Figure 6 -->
-        <div class="ons-chartbox">
-          <figure class="ons-chart">
-            <figcaption>
-              <p class="ons-figure__label ons-u-fs-r--1">Figure 6</p>
-              <h3 class="ons-figure__title ons-u-fs-r">There was no statistically significant change in Crime Survey for England and Wales violence with or without injury perpetrated by a stranger or an acquaintance compared with last year</h3>
-              <p class="ons-figure__subtitle ons-u-fs-r--1">Annual estimates, England and Wales</p>
-            </figcaption>
-
-            <figure class="ons-chart-image">
-              <img src="/prototypes/assets/fig-6-crime.png" alt="Figure 6 crime chart">
-              <figcaption class="ons-image__caption">Source: Crime Survey for England and Wales (CSEW) from the Office for National Statistics</figcaption>
-            </figure>
-            <div class="ons-chart_download">
-              <span class=" ons-u-fs-r--b">Download Figure 6 data: </span>
-              <div class="ons-list ons-list--p">
-                <p class="ons-list__item">
-                  <a href="#0" class="ons-list__link">Excel spreadsheet (XLSX format, 41KB)</a>
-                </p>
-              </div>
-            </div>
-          </figure>
-
-          <div id="details-example" class="ons-details ons-js-details ons-details--initialised" role="group">
-            <div class="ons-details__heading ons-js-details-heading" role="link" aria-controls="details-example" tabindex="0" aria-expanded="false" data-ga-action="Close panel" data-ga-interaction-value="Close panel">
-              <h2 class="ons-details__title ons-u-fs-r--b">Notes</h2>
-              <span class="ons-details__icon">
-                <svg class="ons-icon" viewBox="0 0 8 13" xmlns="http://www.w3.org/2000/svg" focusable="false" fill="currentColor" role="img" aria-hidden="true">
-                  <path d="M5.74,14.28l-.57-.56a.5.5,0,0,1,0-.71h0l5-5-5-5a.5.5,0,0,1,0-.71h0l.57-.56a.5.5,0,0,1,.71,0h0l5.93,5.93a.5.5,0,0,1,0,.7L6.45,14.28a.5.5,0,0,1-.71,0Z" transform="translate(-5.02 -1.59)"></path>
-                </svg>
-              </span>
-            </div>
-            <div id="details-example-content" class="ons-details__content ons-js-details-content" aria-hidden="true">
-              <ol class="ons-list">
-                <li class="ons-list__item">Data on the chart cover different time periods: 1981 to 1999 data are for calendar years.</li>
-                <li class="ons-list__item">From year ending (YE) March 2002 onwards, data are for the 12 months before the interview.</li>
-                <li class="ons-list__item">Estimates for YE March 2021 and YE March 2022 are not available because of the suspension of face-to-face interviewing during the coronavirus (COVID-19) pandemic.</li>
-              </ol>
-            </div>
-          </div>
-        </div><!-- end fig 6 -->
-
-        <div class="ons-text-container">
-          <div class="ons-panel ons-panel--warn ons-panel--no-title">
-            <span class="ons-panel__icon" aria-hidden="true">!</span>
-            <span class="ons-panel__assistive-text ons-u-vh">Important Information</span>
-            <div class="ons-panel__body">
-              Trends in police recorded crime are affected by improvements to recording practices and variations in police activity. These effects are more pronounced for some crime types. For further information, see <a href="#section20">Section 20: Data sources and quality</a>.
-            </div>
-          </div>
-          <p>While there was a 1% increase in police recorded violence without injury (to 825,762 offences) in YE December 2025 compared with YE December 2024 (816,248 offences), there was a 4% decrease in police recorded violence with injury (to 507,161 offences). This follows large increases in these offences since 2015, mainly because of improvements to recording practices over this period.</p>
-        </div>
-      </section>
-
-      <section id="section8" class="ons-u-mb-xl">
-        <div class="ons-text-container">
-          <h2 class="ons-u-fs-xl ons-u-mt-2xl">8. Domestic abuse</h2>
-          <p>The Crime Survey for England and Wales (CSEW) self-completion module is more reliable for measuring domestic abuse than police recorded crime data. The latest CSEW estimates available are for year ending (YE) March 2025 (see <a href="#section2">Section 2: Things you need to know about this release)</a>.</p>
-          <p>Around 7.8% of people aged 16 years and over experienced domestic abuse in the last year (around 3.8 million people), reported in the YE March 2025 survey. This represents no statistically significant change compared with the YE March 2024 survey.</p>
-          <div class="ons-panel ons-panel--warn ons-panel--no-title">
-            <span class="ons-panel__icon" aria-hidden="true">!</span>
-            <span class="ons-panel__assistive-text ons-u-vh">Important Information</span>
-            <div class="ons-panel__body">
-              Police recorded crime data do not provide a measure of domestic abuse prevalence and are not a good indicator of trends over time because of changes in police recording practices. For further information, see <a href="#section20">Section 20: Data sources and quality</a>.
-            </div>
-          </div>
-          <p>The police categorised 824,772 offences as domestic abuse-related in YE December 2025, similar to the previous year (820,856 offences). Of these, 641,461 were violence against the person offences.</p>
-          <p>Further information and data related to domestic abuse can be found in our <a href="#" aria-disabled="true" class="ons-link--disabled">Domestic abuse in England and Wales overview: November 2025 bulletin</a>.</p>
-        </div>
-      </section>
-
-      <section id="section9" class="ons-u-mb-xl">
-        <div class="ons-text-container">
-          <h2 class="ons-u-fs-xl ons-u-mt-2xl">9. Sexual offences</h2>
-          <p>The Crime Survey for England and Wales (CSEW) self-completion module provides a more reliable measure of trends in sexual offences than police recorded crime data. The latest CSEW estimates available are for year ending (YE) March 2025 (see <a href="#section2">Section 2: Things you need to know about this release)</a>.</p>
-          <p>Around 1.9% of people aged 16 years and over were estimated to have experienced sexual assault (including attempted offences) (around 900,000 people) in the last year, as reported in the YE March 2025 survey. This represented no statistically significant change compared with the YE March 2024 survey.</p>
-          <p>When analysing long-term trends, we use the 16-to-59-years age range to give a comparable data time series. The prevalence of sexual assault among people aged 16 to 59 years has fluctuated between 1.5% and 3.0% over the last 20 years. Over the last 10 years, there has been an increase in sexual assault, after a previous decrease from YE March 2005 to YE March 2014. In the YE March 2025 survey, 2.4% of people aged 16 to 59 years had experienced sexual assault, compared with 1.7% in the YE March 2015 survey.</p>
-          <div class="ons-panel ons-panel--warn ons-panel--no-title">
-            <span class="ons-panel__icon" aria-hidden="true">!</span>
-            <span class="ons-panel__assistive-text ons-u-vh">Important Information</span>
-            <div class="ons-panel__body">
-              Police recorded sexual offences are not a good indicator of trends over time. Improvements in police recording practices, the introduction of new offences, and increased reporting by victims have contributed to the level of offences in recent years. See <a href="#section20">Section 20: Data sources and quality</a>.
-            </div>
-          </div>
-          <p>There have been general increases in police recorded sexual offences over the last decade, largely because of improvements in police recording practices. There was a 5% increase in YE December 2025 (to 215,180 offences) compared with the previous year (204,568 offences). Within sexual offences, there was a 5% rise in rape offences (to 74,174 offences) compared with YE December 2024 (70,898 offences). Around 34% of all sexual offences recorded by the police in YE December 2025 were rape offences.</p>
-          <p>Further data related to sexual offences were released on 4 November 2025 in our <a href="#" aria-disabled="true" class="ons-link--disabled">Sexual offences in England and Wales overview: year ending March 2025 bulletin</a>.</p>
-        </div>
-      </section>
-
-      <section id="section10" class="ons-u-mb-xl">
-        <div class="ons-text-container">
-          <h2 class="ons-u-fs-xl ons-u-mt-2xl">10. Stalking and harassment</h2>
-          <p>The Crime Survey for England and Wales (CSEW) self-completion module provides a more reliable measure of stalking than police recorded crime data. The latest CSEW estimates available are for year ending (YE) March 2025 (see <a href="#section20">Section 2: Things you need to know about this release)</a>.</p>
-          <p>Around 2.9% of people aged 16 years and over had experienced stalking in the last year (around 1.4 million people) for the YE March 2025 survey. This represents no statistically significant change compared with the YE March 2024 survey. For more details, see our <a href="#" aria-disabled="true" class="ons-link--disabled">Stalking: findings from the Crime Survey for England and Wales dataset.</a></p>
-          <p>When analysing long-term trends, we use the 16-to-59-years age range to give a comparable data time series. The CSEW for YE March 2025 estimated that 3.5% of people aged 16 to 59 years had experienced stalking in the last year. The trend has been relatively stable over the last 10 years.</p>
-          <p>The CSEW also measures experiences of harassment, including one-off incidents. This is different from how the police define harassment where the behaviour must occur on more than one occasion. This is explained in the Home Office's <a href="#" aria-disabled="true" class="ons-link--disabled">Crime Recording Rules for frontline officers and staff guidance</a>. In the CSEW YE March 2025, 8.6% (around 4.2 million people) had experienced some form of harassment. This represents no statistically significant change compared with the YE March 2024 survey.</p>
-          <div class="ons-panel ons-panel--warn ons-panel--no-title">
-            <span class="ons-panel__icon" aria-hidden="true">!</span>
-            <span class="ons-panel__assistive-text ons-u-vh">Important Information</span>
-            <div class="ons-panel__body">
-              Police recorded stalking and harassment are not a good indicator of trends over time. This is because changes in recording practices and counting rules have affected the recording of these crimes over the last 10 years. See <a href="#section20">Section 20: Data sources and quality</a>.
-            </div>
-          </div>
-          <p>Police recorded stalking and harassment increased by 3% to 622,376 offences. This was because of a 7% rise in stalking (to 144,025 offences) and a 7% increase in harassment (including racially or religiously aggravated harassment) to 319,695 offences. There continued to be falls in malicious communication offences, a 16% decrease to 93,088 offences, largely because of changes in the recording of conduct crimes (for a definition, see <a href="#section19">Section 19: Glossary)</a>.</p>
-        </div>
-      </section>
-
-      <section id="section11" class="ons-u-mb-xl">
-        <div class="ons-text-container">
-          <h2 class="ons-u-fs-xl ons-u-mt-2xl">11. Combined measure of domestic abuse, sexual assault, and stalking</h2>
-          <p>We produced a “combined measure of domestic abuse, sexual assault, and stalking” for the first time in July 2025. This refers to people who have experienced one or more of these crime types in the last year. This measure has been produced as the main measure for monitoring the Government's ambition to halve violence against women and girls (VAWG) in a decade. The Home Office provided more detail on the use of this combined measure in a new cross-government <a href="#" aria-disabled="true" class="ons-link--disabled">VAWG strategy</a> that was published in December 2025.</p>
-          <p>We estimated that 10.6% of people aged 16 years and over (12.8% of women and 8.4% of men), which is around 5.1 million people, had experienced at least one of the following crime types in the last year:</p>
-          <ul>
-            <li>domestic abuse</li>
-            <li>sexual assault</li>
-            <li>stalking</li>
-          </ul>
-          <p>This estimate is based on data from the Crime Survey for England and Wales (CSEW) year ending March 2025 survey and will next be updated in July when estimates for the year ending March 2026 survey are released.</p>
-          <p>The estimates from this metric are official statistics in development. For further information please see our <a href="#" aria-disabled="true" class="ons-link--disabled">Developing a combined measure of domestic abuse, sexual assault and stalking, England and Wales: July 2025 article</a>.</p>
-        </div>
-      </section>
-
-      <section id="section12" class="ons-u-mb-xl">
-        <div class="ons-text-container">
-          <h2 class="ons-u-fs-xl ons-u-mt-2xl">12. Robbery</h2>
-          <p>Robbery involves the use of force, or threat of force, to attempt or complete a theft (for a definition see <a href="#section19">Section 19: Glossary</a>). Police recorded robbery of personal property decreased by 12% (to 58,508 offences) in year ending (YE) December 2025, while overall robbery offences increased by 4% (to 84,666 offences).</p>
-          <p>A clarification of Home Office Counting Rules with police forces in April 2025 has contributed to an increase in the number of robbery of business property offences during this period (a 78% rise to 26,158 offences). It was made clear to forces that if an offender enters a retail premises, steals, and either uses or threatens violence against a shop worker, or security guard, or any other person at the time, or uses or threatens violence to escape, then an offence of robbery of business property should be recorded.</p>
-          <p>The Crime Survey for England and Wales (CSEW) estimated 88,000 robbery incidents in YE December 2025. There was no statistically significant change compared with the previous year's survey. Police data are the preferred measure for robbery offences. This is because the CSEW estimates are subject to year-to-year volatility because of the small number of victims found in the sample.</p>
-        </div>
-      </section>
-
-      <section id="section13" class="ons-u-mb-xl">
-        <div class="ons-text-container">
-          <h2 class="ons-u-fs-xl ons-u-mt-2xl">13. Theft offences</h2>
-          <p>The Crime Survey for England and Wales (CSEW) is the best way to track long-term trends in common crimes like theft. Police data, however, can show trends in specific theft offences that are well reported and well recorded, such as burglary, and can highlight emerging trends.</p>
-          <p>The CSEW for year ending (YE) December 2025 estimated 2.6 million theft incidents, an 11% decrease compared with the previous year's survey (2.9 million incidents). This was 35% lower compared with the YE March 2015 survey (4.0 million incidents), and 78% lower than the peak in the YE December 1995 survey (11.6 million incidents). The decrease in theft offences was mainly because of a fall in domestic burglary and vehicle related theft.</p>
-          <p>Incidents of domestic burglary decreased by 22% (to around 327,000 incidents) compared with the YE December 2024 survey (around 422,000 incidents). There was also a 14% reduction in vehicle-related theft (to around 596,000 incidents) compared with the previous year's survey (695,000 incidents). This continues the falling trend observed over the last 30 years.</p>
-        </div>
-
-        <!-- Figure 7 -->
-        <div class="ons-chartbox">
-          <figure class="ons-chart">
-            <figcaption>
-              <p class="ons-figure__label ons-u-fs-r--1">Figure 7</p>
-              <h3 class="ons-figure__title ons-u-fs-r">There was a decrease in Crime Survey for England and Wales domestic burglary and vehicle-related theft compared with last year's survey</h3>
-              <p class="ons-figure__subtitle ons-u-fs-r--1">Annual estimates, England and Wales</p>
-            </figcaption>
-
-            <figure class="ons-chart-image">
-              <img src="/prototypes/assets/fig-7-crime.png" alt="Figure 7 crime chart">
-              <figcaption class="ons-image__caption">Source: Crime Survey for England and Wales (CSEW) from the Office for National Statistics</figcaption>
-            </figure>
-            <div class="ons-chart_download">
-              <span class=" ons-u-fs-r--b">Download Figure 6 data: </span>
-              <div class="ons-list ons-list--p">
-                <p class="ons-list__item">
-                  <a href="#0" class="ons-list__link">Excel spreadsheet (XLSX format, 41KB)</a>
-                </p>
-              </div>
-            </div>
-          </figure>
-
-          <div id="details-example" class="ons-details ons-js-details ons-details--initialised" role="group">
-            <div class="ons-details__heading ons-js-details-heading" role="link" aria-controls="details-example" tabindex="0" aria-expanded="false" data-ga-action="Close panel" data-ga-interaction-value="Close panel">
-              <h2 class="ons-details__title ons-u-fs-r--b">Notes</h2>
-              <span class="ons-details__icon">
-                <svg class="ons-icon" viewBox="0 0 8 13" xmlns="http://www.w3.org/2000/svg" focusable="false" fill="currentColor" role="img" aria-hidden="true">
-                  <path d="M5.74,14.28l-.57-.56a.5.5,0,0,1,0-.71h0l5-5-5-5a.5.5,0,0,1,0-.71h0l.57-.56a.5.5,0,0,1,.71,0h0l5.93,5.93a.5.5,0,0,1,0,.7L6.45,14.28a.5.5,0,0,1-.71,0Z" transform="translate(-5.02 -1.59)"></path>
-                </svg>
-              </span>
-            </div>
-            <div id="details-example-content" class="ons-details__content ons-js-details-content" aria-hidden="true">
-              <ol class="ons-list">
-                <li class="ons-list__item">Data on the chart cover different time periods: 1981 to 1999 data are for calendar years.</li>
-                <li class="ons-list__item">From year ending (YE) March 2002 onwards, data are for the 12 months before the interview.</li>
-                <li class="ons-list__item">Estimates for YE March 2021 and YE March 2022 are not available because of the suspension of face-to-face interviewing during the coronavirus (COVID-19) pandemic.</li>
-              </ol>
-            </div>
-          </div>
-        </div><!-- end fig 7 -->
-
-        <div class="ons-text-container">
-          <p>Further information on CSEW theft, such as mobile phone theft, were recently published in our <a href="#" aria-disabled="true" class="ons-link--disabled">Property crime tables, England and Wales: year ending March 2025</a>.</p>
-          <p>The police recorded 1.7 million theft offences in YE December 2025, an 8% decrease compared with the previous year (1.8 million offences) and aligns with trends seen in the CSEW. This included falls in vehicle-related theft and burglary.</p>
-          <p>Police recorded vehicle offences decreased by 13% (to 315,923 offences) during this period and police recorded burglary, which includes both residential and non-residential burglaries, fell by 12% to 224,518 offences. Police recorded theft from the person also fell by 15% to 129,068 offences, following increases in these offences since YE March 2021 (49,666 offences).</p>
-          <p>Following recent rises in shoplifting, there was a 1% decrease (to 509,566 offences) in YE December 2025 compared with the previous year (516,611 offences). However, it is important to note that a clarification of Home Office Counting Rules with police forces in April 2025 made it clear to forces that if an offender enters a retail premises, steals, and either uses or threatens violence against a shop worker, or security guard, or any other person at the time, or uses or threatens violence to escape, then an offence of robbery of business property should be recorded. This clarification is likely to have had a small effect on the number of shoplifting offences recorded since April 2025.</p>
-        </div>
-      </section>
-
-      <section id="section14" class="ons-u-mb-xl">
-        <div class="ons-text-container">
-          <h2 class="ons-u-fs-xl ons-u-mt-2xl">14. Criminal damage</h2>
-          <p>The Crime Survey for England and Wales (CSEW) year ending (YE) December 2025 estimated around 616,000 incidents of criminal damage. This showed no statistically significant change compared with the YE December 2024 survey. However, this was 54% lower compared with the YE March 2015 survey (1.3 million incidents), and 82% below the peak in the YE December 1995 survey (3.4 million incidents).</p>
-          <p>Police recorded 431,710 criminal damage offences in YE December 2025, a 4% fall compared with the previous year.</p>
-        </div>
-      </section>
-
-      <section id="section15" class="ons-u-mb-xl">
-        <div class="ons-text-container">
-          <h2 class="ons-u-fs-xl ons-u-mt-2xl">15. Fraud</h2>
-          <p>There were an estimated 4.4 million incidents of fraud in the year ending (YE) December 2025 Crime Survey for England and Wales (CSEW), no statistically significant change compared with the YE December 2024 survey (4.1 million incidents). However, there was a 15% increase in bank and credit account fraud (to around 2.7 million incidents). Out of the estimated 4.4 million incidents of fraud, around 3.2 million incidents involved a loss. Victims said that they were fully reimbursed in 2.4 million of these cases.</p>
-        </div>
-
-        <!-- Figure 8 -->
-        <div class="ons-chartbox">
-          <figure class="ons-chart">
-            <figcaption>
-              <p class="ons-figure__label ons-u-fs-r--1">Figure 8</p>
-              <h3 class="ons-figure__title ons-u-fs-r">There was an increase in Crime Survey for England and Wales bank and credit account fraud compared with the previous year</h3>
-              <p class="ons-figure__subtitle ons-u-fs-r--1">Annual estimates, England and Wales</p>
-            </figcaption>
-
-            <figure class="ons-chart-image">
-              <img src="/prototypes/assets/fig-8-crime.png" alt="Figure 8 crime chart">
-              <figcaption class="ons-image__caption">Source: Crime Survey for England and Wales (CSEW) from the Office for National Statistics</figcaption>
-            </figure>
-            <div class="ons-chart_download">
-              <span class=" ons-u-fs-r--b">Download Figure 8 data: </span>
-              <div class="ons-list ons-list--p">
-                <p class="ons-list__item">
-                  <a href="#0" class="ons-list__link">Excel spreadsheet (XLSX format, 28KB)</a>
-                </p>
-              </div>
-            </div>
-          </figure>
-
-          <div id="details-example" class="ons-details ons-js-details ons-details--initialised" role="group">
-            <div class="ons-details__heading ons-js-details-heading" role="link" aria-controls="details-example" tabindex="0" aria-expanded="false" data-ga-action="Close panel" data-ga-interaction-value="Close panel">
-              <h2 class="ons-details__title ons-u-fs-r--b">Notes</h2>
-              <span class="ons-details__icon">
-                <svg class="ons-icon" viewBox="0 0 8 13" xmlns="http://www.w3.org/2000/svg" focusable="false" fill="currentColor" role="img" aria-hidden="true">
-                  <path d="M5.74,14.28l-.57-.56a.5.5,0,0,1,0-.71h0l5-5-5-5a.5.5,0,0,1,0-.71h0l.57-.56a.5.5,0,0,1,.71,0h0l5.93,5.93a.5.5,0,0,1,0,.7L6.45,14.28a.5.5,0,0,1-.71,0Z" transform="translate(-5.02 -1.59)"></path>
-                </svg>
-              </span>
-            </div>
-            <div id="details-example-content" class="ons-details__content ons-js-details-content" aria-hidden="true">
-              <ol class="ons-list">
-                <li class="ons-list__item">Fraud estimates are only available from year ending (YE) March 2017 onwards.</li>
-                <li class="ons-list__item">Estimates for YE March 2021 and YE March 2022 are not available because of the suspension of face-to-face interviewing during the coronavirus (COVID-19) pandemic.</li>
-              </ol>
-            </div>
-          </div>
-        </div><!-- end fig 8 -->
-
-        <div class="ons-text-container">
-          <p>Levels of fraud have increased by 30% compared with the earliest comparable year, YE March 2017 CSEW (around 3.4 million incidents). While levels of bank and credit account fraud for YE December 2025 were similar, there was a 51% rise in consumer and retail fraud, and a more than five-fold increase in advance fee fraud compared with the YE March 2017 survey (for definitions of the different types of fraud, see <a href="#section19">Section 19: Glossary</a>).</p>
-          <p>Further information on CSEW fraud, such as risk of victimisation, were recently published in our <a href="#" aria-disabled="true" class="ons-link--disabled">Fraud and computer misuse in England and Wales: year ending March 2025 bulletin</a>.</p>
-          <p>Police recorded fraud statistics are not presented in this bulletin as the Home Office and ONS have agreed that while the City of London Police are starting to use a new reporting system, they can temporarily suspend their supply of recorded cybercrime and fraud data. For further information, see <a href="#section20">Section 20: Data sources and quality</a>.</p>
-          <p>Latest data available from the recorded fraud series showed a 12% increase in fraud offences in YE September 2025 (1.4 million offences) compared with the previous year (1.2 million offences).</p>
-        </div>
-      </section>
-
-      <section id="section16" class="ons-u-mb-xl">
-        <div class="ons-text-container">
-          <h2 class="ons-u-fs-xl ons-u-mt-2xl">16. Computer misuse</h2>
-          <p>There were an estimated 735,000 incidents of computer misuse in the year ending (YE) December 2025 Crime Survey for England and Wales (CSEW), no statistically significant change compared with the previous year's survey. CSEW computer misuse was 58% lower than the YE March 2017 survey (around 1.8 million incidents), which is the earliest comparable year.</p>
-          <p>Further information on CSEW computer misuse, such as nature of computer viruses, were recently published in our <a href="#" aria-disabled="true" class="ons-link--disabled">Fraud and computer misuse in England and Wales: year ending March 2025 bulletin</a>.</p>
-          <p>Police recorded computer misuse statistics are not presented in this bulletin as the Home Office and ONS have agreed that while the City of London Police are starting to use a new reporting system, they can temporarily suspend their supply of recorded cybercrime and fraud data. For further information, see <a href="#section20">Section 20: Data sources and quality</a>.</p>
-          <p>Latest data available from police recorded computer misuse showed a 29% increase in computer misuse offences for YE September 2025 (to 62,151 offences) compared with YE September 2024 (48,305 offences).</p>
-          <p>Computer misuse is also a concern for businesses and organisations. Findings from the <a href="#" aria-disabled="true" class="ons-link--disabled">Cyber Security Breaches Survey 2025</a> showed that 20% of businesses and 14% of charities had been victims of at least one cybercrime in the past year. This was similar to the previous year's survey.</p>
-        </div>
-      </section>
-
-      <section id="section17" class="ons-u-mb-xl">
-        <div class="ons-text-container">
-          <h2 class="ons-u-fs-xl ons-u-mt-2xl">17. Anti-social behaviour</h2>
-          <p>The Crime Survey for England and Wales (CSEW) for year ending (YE) December 2025 showed that an estimated 39% of people experienced or witnessed anti-social behaviour (ASB). This was a statistically significant increase from the previous year (36%). Although some of this increase was likely to be genuine, it may also have been because of changes to the ordering of questions in the CSEW questionnaire that were made in April 2025. We are currently investigating the effect of changes on these estimates and will provide a methodological report on this before the end of the year.</p>
-          <p>The number of police-recorded ASB incidents, including those by the British Transport Police, remained similar at 1 million incidents. Recent inspections by His Majesty's Inspectorate of Constabulary and Fire &amp; Rescue Services (HMICFRS) have found that many forces needed to improve how they identify and record antisocial behaviour. For further information see the HMICFRS report, <a href="#" aria-disabled="true" class="ons-link--disabled">"Policing response to anti-social behaviour"</a>.</p>
-        </div>
-      </section>
-
-      <section id="section18" class="ons-u-mb-xl">
-        <div class="ons-text-container">
-          <h2 class="ons-u-fs-xl ons-u-mt-2xl">18. Data on crime in England and Wales</h2>
-
-          <ul class="ons-document-list">
-            <li class="ons-document-list__item">
-              <div class="ons-document-list__item-content">
-                <div class="ons-document-list__item-header">
-                  <h2 class="ons-document-list__item-title ons-u-fs-m ons-u-mt-no ons-u-mb-2xs">
-                    <a href="#0">Crime in England and Wales: Appendix tables</a>
-                  </h2>
-                  <ul class="ons-document-list__item-metadata ons-u-mb-2xs">
-                    <li class="ons-document-list__item-attribute">
-                      <span class="ons-u-fw-b">Released: </span><time datetime="2026-04-23">23 April 2026</time>
-                    </li>
-                    <li class="ons-document-list__item-attribute">
-                      <span class="ons-u-fw-b">Dataset</span>
-                    </li>
-                  </ul>
-                </div>
-                <div class="ons-document-list__item-description">
-                  <p>Trends in Crime Survey for England and Wales (CSEW) crime and Home Office police recorded crime for England and Wales, by offence type. Also includes more detailed data on crimes such as violence, fraud, and anti-social behaviour.</p>
-                </div>
-              </div>
-            </li>
-            <li class="ons-document-list__item">
-              <div class="ons-document-list__item-content">
-                <div class="ons-document-list__item-header">
-                  <h2 class="ons-document-list__item-title ons-u-fs-m ons-u-mt-no ons-u-mb-2xs">
-                    <a href="#0">Crime in England and Wales: Police Force Area data tables</a>
-                  </h2>
-                  <ul class="ons-document-list__item-metadata ons-u-mb-2xs">
-                    <li class="ons-document-list__item-attribute">
-                      <span class="ons-u-fw-b">Released: </span><time datetime="2026-04-23">23 April 2026</time>
-                    </li>
-                    <li class="ons-document-list__item-attribute">
-                      <span class="ons-u-fw-b">Dataset</span>
-                    </li>
-                  </ul>
-                </div>
-                <div class="ons-document-list__item-description">
-                  <p>Police recorded crime figures by Police Force Area and Community Safety Partnership areas (which usually equate to local authorities).</p>
-                </div>
-              </div>
-            </li>
-          </ul>
-        </div>
-      </section>
-
-      <section id="section19" class="ons-u-mb-xl">
-        <div class="ons-text-container">
-          <h2 class="ons-u-fs-xl ons-u-mt-2xl">19. Glossary</h2>
-          <h3>Computer misuse</h3>
-          <p>Computer misuse is when fraudsters hack or use computer viruses or malware to disrupt services, obtain information illegally, or extort individuals or organisations.</p>
-          <h3>Conduct crime</h3>
-          <p>Conduct crime is defined as stalking, harassment, or controlling and coercive behaviour, which are offences where there has been unwanted or unwarranted behaviour that amounts to a course of conduct. The course of conduct or behaviour must comprise two or more occasions or events for an offence to be recorded by the police.</p>
-          <h3>Criminal damage</h3>
-          <p>Criminal damage results from any person who, without lawful excuse, destroys or damages any property belonging to another. This includes either:</p>
-          <ul>
-            <li>intending to destroy or damage any such property</li>
-            <li>being reckless as to whether any such property would be destroyed or damaged</li>
-          </ul>
-          <h3>Fraud</h3>
-          <p>Fraud involves a person dishonestly and deliberately deceiving a victim for personal gain of property or money, or causing loss or risk of loss to another. Most incidents fall under the legal definition of “fraud by false representation”, where a person makes a representation that they know to be untrue or misleading (for example, banking and payment card frauds, and dating scams). The Crime Survey for England and Wales (CSEW) estimates cover a broad range of fraud offences including:</p>
-          <ul>
-            <li>"Bank and credit account fraud", which usually involves falsely obtaining or using personal bank or payment card details to carry out fraudulent transactions; this can involve using a false identity, deceitful credit application, credit or debit cards, cloned cards, cheque books, or online accounts</li>
-            <li>"Consumer and retail fraud", which occur when goods or services were paid for but failed to materialise, were misrepresented at point of sale, or were faulty or stolen; this includes bogus callers, ticketing fraud, phone scams, and computer software service fraud</li>
-            <li>"Advance fee fraud", which occur when a payment is made to fraudsters, who claim to be in a position of authority, to transfer money or for a promise of employment, wealth, or gifts (including lottery scams and inheritance fraud)</li>
-            <li>"Other fraud" includes types of fraud not covered elsewhere, such as investment or charity fraud</li>
-          </ul>
-          <h3>Overall theft offences</h3>
-          <p>CSEW theft offences include all personal and household crime where items are stolen, including:</p>
-          <ul>
-            <li>theft from the person</li>
-            <li>other theft of personal property</li>
-            <li>domestic burglary and other household theft</li>
-            <li>vehicle-related theft and bicycle theft</li>
-          </ul>
-          <h3>Robbery</h3>
-          <p>Robbery is an offence in which force, or the threat of force, is used either during or immediately before a theft or attempted theft. "Mugging" is an informal term for robbery. In this bulletin, we use the term "robbery".</p>
-          <h3>Violence with or without injury</h3>
-          <p>Violent crime covers a range of offence types from minor assaults, such as pushing and shoving that result in no physical harm, to murder. This includes offences where the victim was intentionally stabbed, punched, kicked, pushed, or jostled, as well as offences where the victim was threatened with violence, regardless of injury.</p>
-          <p>More information and further definitions can be found in <a href="#section5">Section 5: Offence types of our User guide to crime statistics for England and Wales: March 2025</a>.</p>
-        </div>
-      </section>
-
-      <section id="section20" class="ons-u-mb-xl">
-        <div class="ons-text-container">
-          <h2 class="ons-u-fs-xl ons-u-mt-2xl">20. Data sources and quality</h2>
-          <p>Crime statistics are based on the Crime Survey for England and Wales (CSEW) and police recorded crime. CSEW estimates are <a href="#" aria-disabled="true" class="ons-link--disabled">accredited official statistics</a> and were <a href="#" aria-disabled="true" class="ons-link--disabled">independently reviewed by the Office for Statistics Regulation in October 2024</a>. They comply with the standards of trustworthiness, quality, and value in the <a href="#" aria-disabled="true" class="ons-link--disabled">Code of Practice for Statistics</a> and should be labelled "accredited official statistics".</p>
-          <p>Police recorded crime data and recorded fraud and computer misuse are not designated as accredited official statistics and are published as official statistics. Their accreditation was removed by the OSR in January 2014 following an assessment which found evidence that the quality and consistency of the underlying data may not be reliable.</p>
-          <h3>Crime Survey for England and Wales</h3>
-          <p>The CSEW covers selected crimes experienced in the 12 months before the survey interview, including those not reported to the police. However, it excludes crimes against non-household populations and businesses, and does not cover all crime types.</p>
-          <p>The interviewer-administered questions give headline estimates of CSEW crime and include theft, robbery, criminal damage, fraud, computer misuse, and violence with or without injury. Domestic violence and sexual assault are also covered, but because of underreporting in interviews, these are better captured via a self-completion section and reported separately.</p>
-          <p>While sexual assault estimates from the interviewer-administered questions are excluded from CSEW headline crime, domestic violence is included as it is a form of violence with or without injury.</p>
-          <p>The CSEW uses a sample, not the whole population, so estimates have some uncertainty and are not precise figures. This affects how changes in estimates should be interpreted. View more information on <a href="#" aria-disabled="true" class="ons-link--disabled">how we measure and communicate uncertainty for our surveys</a>.</p>
-          <p>It tracks long-term crime trends from year ending (YE) December 1981 to YE December 2025. The CSEW is better for tracking long-term trends than police recorded crime because it is unaffected by changes in reporting or recording practices. The survey's methods have remained comparable since the CSEW began in 1981. The latest figures are based on interviews between October 2024 and December 2025, covering crimes that occurred between October 2023 and November 2025.</p>
-          <p>For more information on the Crime Survey for England and Wales, please see <a href="#" aria-disabled="true" class="ons-link--disabled">Section 2 of our User guide to crime statistics in England and Wales: March 2025</a>.</p>
-          <h3>Police recorded crime</h3>
-          <p>The Home Office collects crime data from the 43 police forces in England and Wales, plus the British Transport Police, covering offences on the notifiable list. Figures in this bulletin represent a snapshot taken on 06 March 2026, covering data up to December 2025.</p>
-          <p>Police recorded crime covers a broader range of offences and populations than the Crime Survey for England and Wales (CSEW). It's the main source for local crime statistics and is effective for tracking well-reported and well-recorded crimes, including lower-volume offences like homicide. It also provides timely insights into emerging trends.</p>
-          <p>However, it excludes unreported or unrecorded crimes. Trends may be influenced by changes in recording practices, police activity, and public reporting, making long-term comparisons difficult. Inconsistencies in recording quality across forces and over time have particularly affected violent crime data over the past decade.</p>
-          <p>Changes in recording rules in May 2023 removed the requirement to record two crimes reported at the same time involving the same perpetrator, when one of them was a conduct crime (for a definition, see <a href="#section19">Section 19: Glossary</a>). This led to fewer crimes often associated with conduct crimes, such as malicious communications offences.</p>
-          <p>To improve consistency, the National Data Quality Improvement Service (NDQIS) tool now flags offences involving knives, domestic abuse, child sexual abuse, and online crime across four police collections. NDQIS is available to 42 forces, with usage details in the relevant datasets.</p>
-          <h3>Recorded fraud and computer misuse</h3>
-          <p>A new national cybercrime and fraud reporting system, <a href="#" aria-disabled="true" class="ons-link--disabled">Report Fraud</a>, was launched by the City of London Police (CoLP) on 4 December 2025 to replace Action Fraud and the National Fraud Intelligence Bureau (NFIB). It brings together all reports made through its public facing service (Report Fraud) alongside fraud reports provided by two industry bodies, Cifas and UK Finance.</p>
-          <p>Recorded fraud and computer misuse are not reliable indicators of overall volume or trends as many victims do not report incidents to Report Fraud. In addition, data on fraud against businesses and organisations are based on reports from Cifas and UK Finance, which only cover their member organisations. They do not represent all businesses and organisations in England and Wales, and membership changes over time, affecting data comparability.</p>
-          <p>Before 4 December 2025, only incidents reported directly by the public to Action Fraud were classified as crimes whereas Cifas and UK Finance reports were retained solely as information reports. In addition, Cifas and UK Finance only shared a subset of reports for intelligence purposes, meaning some reports that could amount to crimes were not passed on.</p>
-          <p>From 4 December 2025, Report Fraud has brought together all reports made through its public facing service with fraud reports from Cifas and UK Finance. Under the new system, Cifas now shares all information reports that could amount to a crime. In addition, Cifas reports are now classified as crimes when they meet the Home Office Counting Rules. UK Finance reports continue to be used as information reports for the purpose of supporting investigations and law enforcement.</p>
-          <p>The Home Office and ONS have agreed that while the CoLP are starting to use this new system, they can temporarily suspend their supply of recorded cybercrime and fraud data. This is to enable the CoLP to give priority to aligning the legacy Action Fraud data against Report Fraud to ensure consistency while also improving the experience for victims reporting cybercrime and fraud and providing essential information needed for the police to manage investigations. Therefore, recorded cybercrime and fraud data are not presented in this bulletin.</p>
-          <p>For more detail on planned improvements, see our action plan: <a href="#" aria-disabled="true" class="ons-link--disabled">Improving the quality of fraud and computer misuse statistics in England and Wales: December 2025</a>.</p>
-          <p>For more information on police recorded crime, please see <a href="#" aria-disabled="true" class="ons-link--disabled">Section 3 of our User guide to crime statistics for England and Wales: March 2025</a>.</p>
-          <p>Further quality and methodology information is available in our <a href="#" aria-disabled="true" class="ons-link--disabled">Crime in England and Wales Quality and Methodology Information (QMI) report</a>.</p>
-        </div>
-      </section>
-
-      <section id="section21" class="ons-u-mb-xl">
-        <div class="ons-text-container">
-          <h2 class="ons-u-fs-xl ons-u-mt-2xl">21. Related links</h2>
-
-          <ul class="ons-document-list">
-            <li class="ons-document-list__item">
-              <div class="ons-document-list__item-content">
-                <div class="ons-document-list__item-header">
-                  <h2 class="ons-document-list__item-title ons-u-fs-m ons-u-mt-no ons-u-mb-2xs">
-                    <a href="#0">Guide to finding crime statistics</a>
-                  </h2>
-                  <ul class="ons-document-list__item-metadata ons-u-mb-2xs">
-                    <li class="ons-document-list__item-attribute">
-                      <span class="ons-u-fw-b">Last revised: </span><time datetime="2026-04-23">7 April 2026</time>
-                    </li>
-                    <li class="ons-document-list__item-attribute">
-                      <span class="ons-u-fw-b">Methodology</span>
-                    </li>
-                  </ul>
-                </div>
-                <div class="ons-document-list__item-description">
-                  <p>Guide to the main sources of crime statistics, by area of interest. Helps users to find and use statistics from multiple government departments.</p>
-                </div>
-              </div>
-            </li>
-            <li class="ons-document-list__item">
-              <div class="ons-document-list__item-content">
-                <div class="ons-document-list__item-header">
-                  <h2 class="ons-document-list__item-title ons-u-fs-m ons-u-mt-no ons-u-mb-2xs">
-                    <a href="#0">Homicide in England and Wales: year ending March 2025</a>
-                  </h2>
-                  <ul class="ons-document-list__item-metadata ons-u-mb-2xs">
-                    <li class="ons-document-list__item-attribute">
-                      <span class="ons-u-fw-b">Released: </span><time datetime="2026-04-23">5 February 2026</time>
-                    </li>
-                    <li class="ons-document-list__item-attribute">
-                      <span class="ons-u-fw-b">Bulletin</span>
-                    </li>
-                  </ul>
-                </div>
-                <div class="ons-document-list__item-description">
-                  <p>Analyses of information held within the Home Office Homicide Index, which contains detailed record-level information about each homicide recorded by police in England and Wales.</p>
-                </div>
-              </div>
-            </li>
-
-            <li class="ons-document-list__item">
-              <div class="ons-document-list__item-content">
-                <div class="ons-document-list__item-header">
-                  <h2 class="ons-document-list__item-title ons-u-fs-m ons-u-mt-no ons-u-mb-2xs">
-                    <a href="#0">Domestic abuse in England and Wales overview: November 2025</a>
-                  </h2>
-                  <ul class="ons-document-list__item-metadata ons-u-mb-2xs">
-                    <li class="ons-document-list__item-attribute">
-                      <span class="ons-u-fw-b">Released: </span><time datetime="2026-04-23">26 November 2025</time>
-                    </li>
-                    <li class="ons-document-list__item-attribute">
-                      <span class="ons-u-fw-b">Bulletin</span>
-                    </li>
-                  </ul>
-                </div>
-                <div class="ons-document-list__item-description">
-                  <p>Figures on domestic abuse from the Crime Survey for England and Wales, police recorded crime and other organisations.</p>
-                </div>
-              </div>
-            </li>
-
-            <li class="ons-document-list__item">
-              <div class="ons-document-list__item-content">
-                <div class="ons-document-list__item-header">
-                  <h2 class="ons-document-list__item-title ons-u-fs-m ons-u-mt-no ons-u-mb-2xs">
-                    <a href="#0">Sexual offences in England and Wales overview: year ending March 2025</a>
-                  </h2>
-                  <ul class="ons-document-list__item-metadata ons-u-mb-2xs">
-                    <li class="ons-document-list__item-attribute">
-                      <span class="ons-u-fw-b">Released: </span><time datetime="2026-04-23">4 November 2025</time>
-                    </li>
-                    <li class="ons-document-list__item-attribute">
-                      <span class="ons-u-fw-b">Bulletin</span>
-                    </li>
-                  </ul>
-                </div>
-                <div class="ons-document-list__item-description">
-                  <p>Data on sexual offences from year ending March 2025 Crime Survey for England and Wales and police recorded crime.</p>
-                </div>
-              </div>
-            </li>
-          </ul>
-        </div>
-      </section>
-
-      <section id="section22" class="ons-u-mb-xl">
-        <div class="ons-text-container">
-          <h2 class="ons-u-fs-xl ons-u-mt-2xl">22. Cite this page</h2>
-          <p>Office for National Statistics (ONS), released 23 April 2026, ONS website, statistical bulletin, <a href="#" aria-disabled="true" class="ons-link--disabled">Crime in England and Wales: year ending December 2025</a></p>
-        </div>
-      </section>
-
-      <section id="section23">
-        <h2 class="ons-u-fs-xl ons-u-mt-2xl">23. Contact details</h2>
-        <div class="ons-text-container">
-          <div class="ons-text-indent">
-            <p>ONS Centre for Crime and Justice<br>
-            <a href="mailto:someone@example.com">crime.justice@ons.gov.uk</a><br>
-            Telephone: +44 1329 444 110<br>
-            Monday to Friday, 9am to 4pm</p>
-          </div>
-        </div>
-      </section>
-
+        </li>
+      </ul>
     </div>
   </div>
 </div>
