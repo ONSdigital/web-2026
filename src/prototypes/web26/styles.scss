@@ -115,46 +115,13 @@ aside.ons-related-content {
   cursor: default;
 }
 
-/* FIGURE component - from Kas CSS ---------- */
-@media (min-width: 40em) {
-  .ons-chartbox {
-    padding: 24px;
-  }
-}
-.ons-chartbox {
-  background-color: #fff;
-  border: 1px solid #bcbcbd;
-  //box-shadow: 0 1px 1px rgba(0, 0, 0, .05);
-  box-shadow: 0 2px 4px rgba(0,0,0,.08);
-  border-radius: 8px;
-  margin-bottom: 32px;
-  // max-width: 856px;
-  max-width: 100%;
-  padding: 24px;
+/* FIGURE component  ---------- */
+
+.figure-wrapper {
+  margin: 2rem 0;
 }
 
-.ons-figure__label {
-  color: #707071; /*text/body/secondary*/
-  margin-bottom: 8px;
-}
 
-.ons-figure__title {
-  font-size: 24px;
-  font-weight: 700;
-  margin: 0 0 .5rem;
-}
-
-.ons-chart-image {
-  margin: 24px 0;
-  padding: 0;
-}
-
-.ons-image__caption {
-    --ons-line-height: 1.25rem;
-    font-size: 0.875rem;
-    font-weight: 400;
-    line-height: 1.25rem;
-}
 
 
 /* EXPLORE DATA --------------------------------------- */
