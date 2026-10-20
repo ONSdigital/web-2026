@@ -1,0 +1,434 @@
+---
+group: Statistical articles
+title: Explore data CPI
+layout: web26/views/_main
+---
+
+
+
+
+{% block pageContent %}
+<section class="ons-hero ons-grid--gutterless ons-hero--grey">
+  <div class="ons-hero__container ons-container ons-container--wide ">
+    <div class="ons-hero__details ons-grid__col ons-col-12@m col-10@s@m">
+      <!-- breadcrumbs -->
+      <nav class="ons-breadcrumbs" aria-label="Breadcrumbs">
+        <ol class="ons-breadcrumbs__items ons-u-fs-s">
+          <li class="ons-breadcrumbs__item" id="breadcrumb-1">
+            <a class="ons-breadcrumbs__link" href="index.html">Home</a><svg class="ons-icon" viewBox="0 0 8 13"
+              xmlns="http://www.w3.org/2000/svg" focusable="false" fill="currentColor" role="img" aria-hidden="true">
+              <path
+                d="M5.74,14.28l-.57-.56a.5.5,0,0,1,0-.71h0l5-5-5-5a.5.5,0,0,1,0-.71h0l.57-.56a.5.5,0,0,1,.71,0h0l5.93,5.93a.5.5,0,0,1,0,.7L6.45,14.28a.5.5,0,0,1-.71,0Z"
+                transform="translate(-5.02 -1.59)" />
+            </svg>
+          </li>
+          <li class="ons-breadcrumbs__item" id="breadcrumb-2">
+            <a class="ons-breadcrumbs__link" href="#">Economy</a><svg class="ons-icon"
+              viewBox="0 0 8 13" xmlns="http://www.w3.org/2000/svg" focusable="false" fill="currentColor" role="img"
+              aria-hidden="true">
+              <path
+                d="M5.74,14.28l-.57-.56a.5.5,0,0,1,0-.71h0l5-5-5-5a.5.5,0,0,1,0-.71h0l.57-.56a.5.5,0,0,1,.71,0h0l5.93,5.93a.5.5,0,0,1,0,.7L6.45,14.28a.5.5,0,0,1-.71,0Z"
+                transform="translate(-5.02 -1.59)" />
+            </svg>
+          </li>
+          <li class="ons-breadcrumbs__item" id="breadcrumb-3">
+            <a class="ons-breadcrumbs__link" href="#">Inflation and price indices</a><svg class="ons-icon"
+              viewBox="0 0 8 13" xmlns="http://www.w3.org/2000/svg" focusable="false" fill="currentColor" role="img"
+              aria-hidden="true">
+              <path
+                d="M5.74,14.28l-.57-.56a.5.5,0,0,1,0-.71h0l5-5-5-5a.5.5,0,0,1,0-.71h0l.57-.56a.5.5,0,0,1,.71,0h0l5.93,5.93a.5.5,0,0,1,0,.7L6.45,14.28a.5.5,0,0,1-.71,0Z"
+                transform="translate(-5.02 -1.59)" />
+            </svg>
+          </li>
+        </ol>
+      </nav>
+
+      <div class="ons-hero__content">
+        <div class="ons-hero__title-container">
+          <header>
+            <div class="ons-hero__title-wrapper">
+              <h1 class="ons-hero__title ons-u-fs-3xl">All data related to Consumer price inflation, UK: August 2026</h1>
+              <h2 class="ons-hero--topic">Related data</h2>
+            </div>
+          </header>
+          <p class="ons-hero__text">Price indices, percentage changes, and weights for the different measures of consumer price inflation.</p>
+        </div>
+        <div class="ons-hero__badge ons-u-mb-s">
+          <a href="https://uksa.statisticsauthority.gov.uk/about-the-authority/uk-statistical-system/types-of-official-statistics/"
+          target="_blank" rel="noopener noreferrer" class="ons-hero__badge-link">
+          <img src="images/logo-Official-Statistics.svg" alt="Official Statistics Badge - Accredited" class="ons-icon--logo" width="90" height="90" />
+          </a>
+        </div>
+      </div>
+      {# <div class="ons-hero__census-logo">
+        <img src="images/logo-Census-2021.svg" alt="logo Census 2021" class="ons-icon--logo" width="152" height="16" />
+      </div> #}
+      <div class="ons-hero__information ons-u-mt-s">
+        <div class="ons-hero__panel ons-hero__panel--ons-green">
+          <h2 class="ons-u-fs-r--b ons-u-m-no">Latest release</h2>
+        </div>
+        <div class="ons-hero__link">
+          <a href="#0" aria-label="View previous releases of CPI"> View previous releases</a>
+        </div>
+      </div>
+      <dl
+      class="ons-description-list ons-description-list__items ons-grid ons-grid--gutterless ons-description-list--inline ons-u-mb-no ons-u-mt-s ons-u-mt-l@l">
+        <div class="ons-description-list__item">
+          <dt class="ons-description-list__term ons-grid__col ons-col-5@xs@l">Release date:</dt>
+          <dd class="ons-description-list__value ons-grid__col ons-col-7@xs@l">16 September 2026</dd>
+        </div>
+        <div class="ons-description-list__item">
+          <dt class="ons-description-list__term ons-grid__col ons-col-5@xs@l">Next release:</dt>
+          <dd class="ons-description-list__value ons-grid__col ons-col-7@xs@l">21 October 2026</dd>
+        </div>
+        <div class="ons-description-list__item">
+          <dt class="ons-description-list__term ons-grid__col ons-col-5@xs@l">Contact:</dt>
+          <dd class="ons-description-list__value ons-grid__col ons-col-7@xs@l">
+            <a class="ons-description-list__link"
+            href="#0">Consumer Price Inflation team</a>
+          </dd>
+        </div>
+      </dl>
+    </div>
+  </div>
+</section>
+
+<div class="ons-page__container ons-container ons-container--wide ">
+  <div class="ons-grid ons-js-table-of-contents-container">
+
+    <!-- main content -->
+    <div class="ons-grid__col ons-col-8@m ons-u-mb-xxl">x§
+      
+      <section id="section6" class="ons-u-mb-xl">
+        <div class="ons-text-container">
+          <h2 class="ons-u-fs-xl ons-u-mt-2xl">6. Data on consumer price inflation</h2>
+          <ul class="ons-document-list">
+            <li class="ons-document-list__item">
+              <div class="ons-document-list__item-content">
+                <div class="ons-document-list__item-header">
+                  <h2 class="ons-document-list__item-title ons-u-fs-m ons-u-mt-no ons-u-mb-2xs">
+                    <a href="#0">Consumer price inflation</a>
+                  </h2>
+                  <ul class="ons-document-list__item-metadata ons-u-mb-2xs">
+                    <li class="ons-document-list__item-attribute">
+                      <span class="ons-u-fw-b">Released: </span><time datetime="2026-09-16">16 September 2026</time>
+                    </li>
+                    <li class="ons-document-list__item-attribute">
+                      <span class="ons-u-fw-b">Dataset</span>
+                    </li>
+                  </ul>
+                </div>
+                <div class="ons-document-list__item-description">
+                  <p>Measures of monthly UK inflation data including the Consumer Prices Index including owner occupiers' housing costs (CPIH), Consumer Prices Index (CPI) and Retail Prices Index (RPI). These tables complement the consumer price inflation time series dataset.</p>
+                </div>
+              </div>
+            </li>
+            <li class="ons-document-list__item">
+              <div class="ons-document-list__item-content">
+                <div class="ons-document-list__item-header">
+                  <h2 class="ons-document-list__item-title ons-u-fs-m ons-u-mt-no ons-u-mb-2xs">
+                    <a href="#0">Consumer price inflation time series</a>
+                  </h2>
+                  <ul class="ons-document-list__item-metadata ons-u-mb-2xs">
+                    <li class="ons-document-list__item-attribute">
+                      <span class="ons-u-fw-b">Released: </span><time datetime="2026-09-16">16 September 2026</time>
+                    </li>
+                    <li class="ons-document-list__item-attribute">
+                      <span class="ons-u-fw-b">Dataset</span>
+                    </li>
+                  </ul>
+                </div>
+                <div class="ons-document-list__item-description">
+                  <p>Comprehensive database of time series covering measures of inflation data for the UK including CPIH, CPI and RPI.</p>
+                </div>
+              </div>
+            </li>
+
+            <li class="ons-document-list__item">
+              <div class="ons-document-list__item-content">
+                <div class="ons-document-list__item-header">
+                  <h2 class="ons-document-list__item-title ons-u-fs-m ons-u-mt-no ons-u-mb-2xs">
+                    <a href="#0">Consumer price inflation detailed briefing note</a>
+                  </h2>
+                  <ul class="ons-document-list__item-metadata ons-u-mb-2xs">
+                    <li class="ons-document-list__item-attribute">
+                      <span class="ons-u-fw-b">Released: </span><time datetime="2026-09-16">16 September 2026</time>
+                    </li>
+                    <li class="ons-document-list__item-attribute">
+                      <span class="ons-u-fw-b">Dataset</span>
+                    </li>
+                  </ul>
+                </div>
+                <div class="ons-document-list__item-description">
+                  <p>The consumer price inflation detailed briefing note contains details of the items contributing to the changes in the CPIH, details of any notable movements, a summary of the reconciliation of CPIH and RPI, and the outlook, which looks ahead to next month's release.</p>
+                </div>
+              </div>
+            </li>
+
+            <li class="ons-document-list__item">
+              <div class="ons-document-list__item-content">
+                <div class="ons-document-list__item-header">
+                  <h2 class="ons-document-list__item-title ons-u-fs-m ons-u-mt-no ons-u-mb-2xs">
+                    <a href="#0">Consumer price inflation consumption segment indices and price quotes</a>
+                  </h2>
+                  <ul class="ons-document-list__item-metadata ons-u-mb-2xs">
+                    <li class="ons-document-list__item-attribute">
+                      <span class="ons-u-fw-b">Released: </span><time datetime="2026-09-16">16 September 2026</time>
+                    </li>
+                    <li class="ons-document-list__item-attribute">
+                      <span class="ons-u-fw-b">Dataset</span>
+                    </li>
+                  </ul>
+                </div>
+                <div class="ons-document-list__item-description">
+                  <p>Price quote data (for locally collected data only) and consumption segment indices (that underpin consumer price inflation statistics), giving users access to the detailed data that are used in the construction of the UK's inflation figures. From publication in March 2026, this dataset no longer includes price quote data for food and non-alcoholic beverages, and alcohol and tobacco. More information is included in <a href="#section19">Section 8: Data sources and quality</a>.</p>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section id="section7" class="ons-u-mb-xl">
+        <div class="ons-text-container">
+          <h2 class="ons-u-fs-xl ons-u-mt-2xl">7. Glossary</h2>
+          <h3>Annual inflation rate</h3>
+          <p>The most common approach to measuring inflation is the 12-month or annual inflation rate, which compares prices for the latest month with the same month a year ago. In any given month, the annual rate is determined by the balance between upward and downward price movements across the range of goods and services included in the index.</p>
+          <h3>Consumer price inflation</h3>
+          <p>Consumer price inflation is the rate at which the prices of goods and services bought by households rise or fall. It is estimated by using price indices. For an overview of the range of indices available and their uses, please see our <a href="#" aria-disabled="true" class="ons-link--disabled">Consumer price indices, a brief guide: 2026</a> and our <a href="#" aria-disabled="true" class="ons-link--disabled">Measuring changing prices and costs for consumers and households: December 2023</a> article.</p>
+          <h3>CPIH</h3>
+          <p>The Consumer Prices Index including owner occupiers' housing costs (CPIH) is the most comprehensive measure of inflation. It extends the Consumer Prices Index (CPI) to include a measure of the costs associated with owning, maintaining and living in one's own home, known as owner occupiers' housing (OOH) costs, along with Council Tax. Both are substantial expenses for many households and are not included in the CPI.</p>
+          <h3>CPI</h3>
+          <p>The CPI is a measure of consumer price inflation produced to international standards, and is based on European regulations for the Harmonised Index of Consumer Prices. The CPI is the inflation measure used in the government's target for inflation.</p>
+          <p>The CPI is produced at the same level of detail as the CPIH in our accompanying Consumer price inflation dataset and in our accompanying Consumer price inflation time series.</p>
+          <h3>RPI</h3>
+          <p>The Retail Prices Index (RPI) and its subcomponents do not meet the required standard for designation as <a href="#" aria-disabled="true" class="ons-link--disabled">accredited official statistics</a>. In recognition that the index continues to be widely used in contracts, we continue to publish the RPI, its subcomponents, and RPI excluding mortgage interest payments (RPIX). To view the all-items RPI, please see the <a href="#" aria-disabled="true" class="ons-link--disabled">data time series section of the Inflation and price indices area of our website</a>. The annual RPI inflation rate was 3.4% in August 2026.</p>
+        </div>
+      </section>
+
+      <section id="section8" class="ons-u-mb-xl">
+        <div class="ons-text-container">
+          <h2 class="ons-u-fs-xl ons-u-mt-2xl">8. Data sources and quality</h2>
+          <h3>Minor error in the classification of some products in our consumer price inflation scanner dataset</h3>
+          <p>We have identified a minor error in the classification of several products in our scanner-based consumption segments from February 2026. This error has no impact on published headline growth rates in the Consumer Prices Index (CPI), the Consumer Prices Index including owner occupiers' housing costs (CPIH) or the Retail Prices Index (RPI).</p>
+          <p>This error was caused by historical inconsistencies in the manual classification of a small number of products that were identified as part of wider system improvements.</p>
+          <p>This minor error has no impact on growth rates at divisional level. However, there are impacts at lower levels of aggregation of up to positive or negative 0.2 percentage points, for the periods February to July 2026 for some items within the food and non-alcoholic beverages, and alcohol and tobacco divisions. Full details of the impacts at these lower levels can be found via the <a href="#" aria-disabled="true" class="ons-link--disabled">Dataset accompanying the product classification error correction, February to July 2026</a>.</p>
+          <p>In line with the <a href="#" aria-disabled="true" class="ons-link--disabled">Office for National Statistics (ONS) consumer prices revisions and correction of errors policy</a>, we have not corrected the low-level indices for those months. However, we have corrected the error in this release. The ONS is reviewing its testing and quality assurance processes in response to this issue.</p>
+          <h3>Introducing scanner data into consumer price inflation statistics</h3>
+          <p>We introduced scanner data for approximately 50% of the grocery market with the February 2026 index, published on 25 March 2026. Instead of collecting 25,000 prices per month directly from shops by price collectors, we are now using approximately 300 million price points derived from sales of over a billion units of products per month, collected directly from supermarket scanners at the checkouts or online. For the remaining 50% of the groceries market, we continue to manually collect prices in-store and online.</p>
+          <p>For comparison, we produced the all-items headline rates for February 2026 without using scanner data. Based on locally collected grocery data, the Consumer Prices Index including owner occupiers' housing costs (CPIH) rose by 3.3% in the year to February 2026, and the Consumer Prices Index (CPI) rose by 3.1%. These were slightly above the official rates of 3.2% and 3.0%, respectively.</p>
+          <p>You can find more about this change and how it affects our headline measures of inflation in our <a href="#" aria-disabled="true" class="ons-link--disabled">Impact analysis on transformation of UK consumer price statistics: January 2026 article</a>.</p>
+          <p>We also published our <a href="#" aria-disabled="true" class="ons-link--disabled">Overview of how we use scanner data in consumer price inflation statistics: January 2026</a> and our <a href="#" aria-disabled="true" class="ons-link--disabled">How multilateral index methods help us understand grocery scanner data article</a>, which support user understanding of how we use the data.</p>
+          <p>Following the Bank of England's response to the proposed changes to the Retail Prices Index (RPI) in 2026 (PDF, 140KB), required under the Statistics and Registration Service Act 2007, this change was included in the RPI released in March 2026. It was also incorporated into the Household Costs Indices (HCIs) published on 28 May 2026.</p>
+          <h3>Changes to published microdata</h3>
+          <p>Despite the benefits of introducing scanner data into the consumer price indices, we can no longer publish the price quote data for food and non-alcoholic beverages, alcohol and tobacco (Divisions 1 and 2 of the CPIH and CPI), or the equivalent categories of RPI in our <a href="#" aria-disabled="true" class="ons-link--disabled">Consumer price inflation consumption segment indices and price quotes dataset</a>. This is because of our data-sharing agreements with retailers.</p>
+          <p>Instead, we have developed new aggregate output statistics to meet the needs of users. We have improved the granularity and accuracy of our <a href="#" aria-disabled="true" class="ons-link--disabled">Shopping prices comparison tool</a>. We now provide average prices for more specific product types, such as "Microwave rice" and "Basmati rice". Under the previous, broader definitions (such as "rice, in all forms") we were unable to produce average prices. Units of measurement are also now included, making comparisons more meaningful and easier to interpret.</p>
+          <h3>Strengths and limitations</h3>
+          <p>In our <a href="#" aria-disabled="true" class="ons-link--disabled">Measuring changing prices and costs for consumers and households article</a>, we illustrated our approach to the process using three "use cases" and described how they relate to the measures published and under development.</p>
+          <p>The three cases refer firstly to the CPIH as our lead measure of inflation, based on economic principles. They also refer to the HCIs as a set of measures that reflect the change in costs and prices experienced by different households, and the RPI as a legacy measure that is required to meet existing user needs. The issues with the RPI are described in our <a href="#" aria-disabled="true" class="ons-link--disabled">Shortcomings of the Retail Prices Index as a measure of inflation article</a>.</p>
+          <h3>Accredited official statistics</h3>
+          <p>These <a href="#" aria-disabled="true" class="ons-link--disabled">accredited official statistics</a> were independently reviewed by the Office for Statistics Regulation in July 2017. They comply with the standards of trustworthiness, quality and value in the <a href="#" aria-disabled="true" class="ons-link--disabled">Code of Practice for Statistics</a> and should be labelled "accredited official statistics".</p>
+        </div>
+      </section>
+
+      <section id="section9" class="ons-u-mb-xl">
+        <div class="ons-text-container">
+          <h2 class="ons-u-fs-xl ons-u-mt-2xl">9. Related links</h2>
+          <ul class="ons-document-list">
+            <li class="ons-document-list__item">
+              <div class="ons-document-list__item-content">
+                <div class="ons-document-list__item-header">
+                  <h2 class="ons-document-list__item-title ons-u-fs-m ons-u-mt-no ons-u-mb-2xs">
+                    <a href="#0">Producer price inflation, UK</a>
+                  </h2>
+                  <ul class="ons-document-list__item-metadata ons-u-mb-2xs">
+                    <li class="ons-document-list__item-attribute">
+                      <span class="ons-u-fw-b">Released: </span><time datetime="2026-09-16">Monthly</time>
+                    </li>
+                    <li class="ons-document-list__item-attribute">
+                      <span class="ons-u-fw-b">Bulletin</span>
+                    </li>
+                  </ul>
+                </div>
+                <div class="ons-document-list__item-description">
+                  <p>Changes in the prices of goods bought and sold by UK manufacturers, including price indices of materials and fuels purchased (input prices) and factory gate prices (output prices).</p>
+                </div>
+              </div>
+            </li>
+            <li class="ons-document-list__item">
+              <div class="ons-document-list__item-content">
+                <div class="ons-document-list__item-header">
+                  <h2 class="ons-document-list__item-title ons-u-fs-m ons-u-mt-no ons-u-mb-2xs">
+                    <a href="#0">Private rent and house prices, UK</a>
+                  </h2>
+                  <ul class="ons-document-list__item-metadata ons-u-mb-2xs">
+                    <li class="ons-document-list__item-attribute">
+                      <span class="ons-u-fw-b">Released: </span><time datetime="2026-09-16">Monthly</time>
+                    </li>
+                    <li class="ons-document-list__item-attribute">
+                      <span class="ons-u-fw-b">Bulletin</span>
+                    </li>
+                  </ul>
+                </div>
+                <div class="ons-document-list__item-description">
+                  <p>The Price Index of Private Rents (PIPR) measures private rent inflation for new and existing tenancies. The UK House Price Index (HPI) measures house price inflation.</p>
+                </div>
+              </div>
+            </li>
+
+            <li class="ons-document-list__item">
+              <div class="ons-document-list__item-content">
+                <div class="ons-document-list__item-header">
+                  <h2 class="ons-document-list__item-title ons-u-fs-m ons-u-mt-no ons-u-mb-2xs">
+                    <a href="#0">Shopping prices comparison tool</a>
+                  </h2>
+                  <ul class="ons-document-list__item-metadata ons-u-mb-2xs">
+                    <li class="ons-document-list__item-attribute">
+                      <span class="ons-u-fw-b">Released: </span><time datetime="2026-09-16">16 September 2026</time>
+                    </li>
+                    <li class="ons-document-list__item-attribute">
+                      <span class="ons-u-fw-b">Interactive</span>
+                    </li>
+                  </ul>
+                </div>
+                <div class="ons-document-list__item-description">
+                  <p>Search to see how the average prices of hundreds of shopping items are changing.</p>
+                </div>
+              </div>
+            </li>
+
+            <li class="ons-document-list__item">
+              <div class="ons-document-list__item-content">
+                <div class="ons-document-list__item-header">
+                  <h2 class="ons-document-list__item-title ons-u-fs-m ons-u-mt-no ons-u-mb-2xs">
+                    <a href="#0">Consumer price inflation, updating weights: 2026</a>
+                  </h2>
+                  <ul class="ons-document-list__item-metadata ons-u-mb-2xs">
+                    <li class="ons-document-list__item-attribute">
+                      <span class="ons-u-fw-b">Released: </span><time datetime="2026-03-16">16 March 2026</time>
+                    </li>
+                    <li class="ons-document-list__item-attribute">
+                      <span class="ons-u-fw-b">Article</span>
+                    </li>
+                  </ul>
+                </div>
+                <div class="ons-document-list__item-description">
+                  <p>An overview of the latest annual update of Consumer Prices Index including owner occupiers' housing costs (CPIH) weights.</p>
+                </div>
+              </div>
+            </li>
+            <li class="ons-document-list__item">
+              <div class="ons-document-list__item-content">
+                <div class="ons-document-list__item-header">
+                  <h2 class="ons-document-list__item-title ons-u-fs-m ons-u-mt-no ons-u-mb-2xs">
+                    <a href="#0">Household costs indices for UK household groups</a>
+                  </h2>
+                  <ul class="ons-document-list__item-metadata ons-u-mb-2xs">
+                    <li class="ons-document-list__item-attribute">
+                      <span class="ons-u-fw-b">Released: </span><time datetime="2026-03-16">Quarterly</time>
+                    </li>
+                    <li class="ons-document-list__item-attribute">
+                      <span class="ons-u-fw-b">Bulletin</span>
+                    </li>
+                  </ul>
+                </div>
+                <div class="ons-document-list__item-description">
+                  <p>Household Costs Indices, 12-month growth rates, expenditure shares and contributions for UK household groups and all households. These are official statistics in development.</p>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section id="section10" class="ons-u-mb-xl">
+        <div class="ons-text-container">
+          <h2 class="ons-u-fs-xl ons-u-mt-2xl">10. Cite this statistical bulletin</h2>
+          <p>Office for National Statistics (ONS), released 16 September 2026, ONS website, statistical bulletin, <a href="#" aria-disabled="true" class="ons-link--disabled">Consumer price inflation, UK: August 2026</a></p>
+        </div>
+      </section>
+
+      <section id="section23">
+        <h2 class="ons-u-fs-xl ons-u-mt-2xl">23. Contact details</h2>
+        <div class="ons-text-container">
+          <div class="ons-text-indent">
+            <p>ONS Consumer Price Inflation team<br>
+            <a href="mailto:someone@example.com">cpi@ons.gov.uk</a><br>
+            Telephone: +44 1329 444 110<br>
+            Monday to Friday, 9am to 4pm</p>
+          </div>
+        </div>
+      </section>
+
+    </div>
+  
+  
+    <!-- sticky left column -->
+  <div class="ons-grid__col ons-grid__col--sticky@m ons-col-4@m ons-u-pr-l ons-u-mb-xxl">
+    <div class="leftcol-scroll">
+
+      <aside class="ons-table-of-contents-container" aria-label="Table of contents">
+        <nav class="ons-table-of-contents" aria-label="Sections in this page">
+          <h2 class="ons-table-of-contents__title ons-u-fs-r--b ons-u-mb-s">Contents</h2>
+          <ol class="ons-list ons-u-mb-l ons-list--toc">
+            <li class="ons-list__item">
+              <a href="#section1" class="ons-list__link">Main points</a>
+            </li>
+            <li class="ons-list__item">
+              <a href="#section2" class="ons-list__link">Consumer price inflation rates</a>
+            </li>
+            <li class="ons-list__item">
+              <a href="#section3" class="ons-list__link">Notable movements in prices</a>
+            </li>
+            <li class="ons-list__item">
+              <a href="#section4" class="ons-list__link">Latest movements in CPIH inflation</a>
+            </li>
+            <li class="ons-list__item">
+              <a href="#section5" class="ons-list__link">Latest movements in CPI inflation</a>
+            </li>
+            <li class="ons-list__item">
+              <a href="#section6" class="ons-list__link">Data on consumer price inflation</a>
+            </li>
+            <li class="ons-list__item">
+              <a href="#section7" class="ons-list__link">Glossary</a>
+            </li>
+            <li class="ons-list__item">
+              <a href="#section8" class="ons-list__link">Data sources and quality</a>
+            </li>
+            <li class="ons-list__item">
+              <a href="#section9" class="ons-list__link">Related links</a>
+            </li>
+            <li class="ons-list__item">
+              <a href="#section10" class="ons-list__link">Cite this statistical bulletin</a>
+            </li>
+            <li class="ons-list__item">
+              <a href="#section11" class="ons-list__link">Contact details</a>
+            </li>
+          </ol>
+        </nav>
+      </aside>
+
+      
+
+      <!-- Print button wrapper -->
+      <div class="ons-u-mb-xl">
+        <button type="button"
+          class="ons-btn ons-btn--print ons-btn--small ons-btn--secondary ons-u-d-no ons-js-print-btn">
+          <span class="ons-btn__inner">
+            <svg class="ons-icon ons-u-mr-2xs" viewBox="0 0 20 16" xmlns="http://www.w3.org/2000/svg"
+              focusable="false" fill="currentColor" role="img" aria-hidden="true">
+              <path d="M17 4H3C1.3 4 0 5.2 0 6.8v5.5h4V16h12v-3.7h4V6.8C20 5.2 18.7 4 17 4zm-3 10H6V9h8v5zm3-6a1 1 0 1 1 0-2 1 1 0 0 1 0 2zm-1-8H4v3h12V0z" />
+            </svg>
+            <span class="ons-btn__text">Print or save this page</span>
+          </span>
+        </button>
+      </div>
+
+    </div> <!-- end .leftcol-scroll -->
+  </div> <!-- end sticky column -->
+
+
+
+  </div>
+</div>
+{% endblock %}
