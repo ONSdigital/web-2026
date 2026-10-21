@@ -133,11 +133,21 @@ aside.ons-related-content {
   gap: 16px;
   max-width: 100%;
   min-height: 84px;
-  padding: 16px 16px;
+  padding: 16px;
   border: 2px solid var(--ons-color-grey-35);
   box-shadow: 0 2px 4px rgba(0,0,0,.08);
   border-radius: 8px;
   margin-bottom: 2rem;
+  transition: box-shadow 0.2s ease;
+  text-decoration: none;
+}
+
+.explore-data__link {
+  text-decoration: underline;
+}
+
+.explore-data__title {
+  text-decoration: none;
 }
 
 .explore-data__icon {
@@ -150,28 +160,13 @@ aside.ons-related-content {
   min-width: 0;
 }
 
-// .explore-data__title {
-//   margin: 0;
-//   color: #222;
-//   font-size: 22px;
-//   font-weight: 700;
-//   line-height: 32px;
-// }
-
-/* new stuff */
-
-// .explore-data {
-//   display: flex;
-//   align-items: center;
-//   gap: 16px;
-//   text-decoration: none;
-//   color: inherit;
-//   padding: 16px;
-//   border: 1px solid #bcbcbd;
-//   border-radius: 8px;
-//   box-shadow: 0 2px 4px rgba(0, 0, 0, .08);
-//   transition: box-shadow 0.2s ease;
-// }
+.explore-data__title {
+  margin: 0;
+  color: #222;
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 32px;
+}
 
 .explore-data:hover {
   box-shadow: 0 4px 8px rgba(0, 0, 0, .12);
@@ -182,9 +177,6 @@ aside.ons-related-content {
   outline-offset: 2px;
 }
 
-// .explore-data__link {
-//   text-decoration: underline;
-// }
 
 
 
