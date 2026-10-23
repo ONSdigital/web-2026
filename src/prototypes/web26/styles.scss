@@ -23,6 +23,11 @@ Do not remove. Required for dynamic generation of survey summary page
   margin-bottom: 48px!important;
 }
 
+/* make the circle more symmetrical */
+.ons-hero--grey::before {
+  border-radius: 0 0 300% 300%;
+}
+
 .ons-hero--navy-blue {
   margin-bottom: 48px;
 }
@@ -125,7 +130,6 @@ aside.ons-related-content {
 
 
 /* EXPLORE DATA --------------------------------------- */
-
 
 .explore-data {
   display: flex;
