@@ -24,9 +24,25 @@ Do not remove. Required for dynamic generation of survey summary page
 }
 
 /* make the circle more symmetrical */
+
+/* Mobile first */
+
 .ons-hero--grey::before {
-  border-radius: 0 0 250% 250%;
+  border-radius: 0 0 400% 400%;
+  width: 180%;
+  left: -40%;
 }
+
+/* Desktop */
+
+@media (min-width: 980px) {
+  .ons-hero--grey::before {
+    border-radius: 0 0 250% 250%;
+    width: 120%;
+    left: -10%;
+  }
+}
+
 
 .ons-hero--navy-blue {
   margin-bottom: 48px;
