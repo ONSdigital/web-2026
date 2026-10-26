@@ -1,0 +1,232 @@
+---
+group: Statistical articles
+title: Explore data Crime
+layout: web26/views/_main
+---
+
+
+
+
+{% block pageContent %}
+<section class="ons-hero ons-grid--gutterless ons-hero--grey">
+  <div class="ons-hero__container ons-container ons-container--wide ">
+    <div class="ons-hero__details ons-grid__col ons-col-12@m col-10@s@m">
+      <!-- breadcrumbs -->
+      <nav class="ons-breadcrumbs" aria-label="Breadcrumbs">
+        <ol class="ons-breadcrumbs__items ons-u-fs-s">
+          <li class="ons-breadcrumbs__item" id="breadcrumb-1">
+            <a class="ons-breadcrumbs__link" href="index.html">Home</a><svg class="ons-icon" viewBox="0 0 8 13"
+              xmlns="http://www.w3.org/2000/svg" focusable="false" fill="currentColor" role="img" aria-hidden="true">
+              <path d="M5.74,14.28l-.57-.56a.5.5,0,0,1,0-.71h0l5-5-5-5a.5.5,0,0,1,0-.71h0l.57-.56a.5.5,0,0,1,.71,0h0l5.93,5.93a.5.5,0,0,1,0,.7L6.45,14.28a.5.5,0,0,1-.71,0Z" transform="translate(-5.02 -1.59)" />
+            </svg>
+          </li>
+          <li class="ons-breadcrumbs__item" id="breadcrumb-2">
+            <a class="ons-breadcrumbs__link" href="#">People, population and community</a><svg class="ons-icon"
+              viewBox="0 0 8 13" xmlns="http://www.w3.org/2000/svg" focusable="false" fill="currentColor" role="img" aria-hidden="true">
+              <path d="M5.74,14.28l-.57-.56a.5.5,0,0,1,0-.71h0l5-5-5-5a.5.5,0,0,1,0-.71h0l.57-.56a.5.5,0,0,1,.71,0h0l5.93,5.93a.5.5,0,0,1,0,.7L6.45,14.28a.5.5,0,0,1-.71,0Z" transform="translate(-5.02 -1.59)" />
+            </svg>
+          </li>
+          <li class="ons-breadcrumbs__item" id="breadcrumb-3">
+            <a class="ons-breadcrumbs__link" href="#">Crime and justice</a><svg class="ons-icon"
+              viewBox="0 0 8 13" xmlns="http://www.w3.org/2000/svg" focusable="false" fill="currentColor" role="img" aria-hidden="true">
+              <path d="M5.74,14.28l-.57-.56a.5.5,0,0,1,0-.71h0l5-5-5-5a.5.5,0,0,1,0-.71h0l.57-.56a.5.5,0,0,1,.71,0h0l5.93,5.93a.5.5,0,0,1,0,.7L6.45,14.28a.5.5,0,0,1-.71,0Z"
+                transform="translate(-5.02 -1.59)" />
+            </svg>
+          </li>
+          <li class="ons-breadcrumbs__item" id="breadcrumb-4">
+            <a class="ons-breadcrumbs__link" href="crime.html">Crime in England and Wales</a><svg class="ons-icon"
+              viewBox="0 0 8 13" xmlns="http://www.w3.org/2000/svg" focusable="false" fill="currentColor" role="img" aria-hidden="true">
+              <path d="M5.74,14.28l-.57-.56a.5.5,0,0,1,0-.71h0l5-5-5-5a.5.5,0,0,1,0-.71h0l.57-.56a.5.5,0,0,1,.71,0h0l5.93,5.93a.5.5,0,0,1,0,.7L6.45,14.28a.5.5,0,0,1-.71,0Z"
+                transform="translate(-5.02 -1.59)" />
+            </svg>
+          </li>
+        </ol>
+      </nav>
+
+      <div class="ons-hero__content">
+        <div class="ons-hero__title-container">
+          <header>
+            <div class="ons-hero__title-wrapper">
+              <h1 class="ons-hero__title ons-u-fs-3xl">All data related to Crime in England and Wales: year ending June 2026</h1>
+              <h2 class="ons-hero--topic">Related data</h2>
+            </div>
+          </header>
+          <p class="ons-hero__text">Crime against households and people aged 16 years and over, using data from police recorded crime and the Crime Survey for England and Wales (CSEW).</p>
+        </div>
+      </div>
+
+      {# <dl class="ons-description-list ons-description-list__items ons-grid ons-grid--gutterless ons-description-list--inline ons-u-mb-no ons-u-mt-s ons-u-mt-l@l">
+        <div class="ons-description-list__item">
+          <dt class="ons-description-list__term ons-grid__col ons-col-5@xs@l">Release date:</dt>
+          <dd class="ons-description-list__value ons-grid__col ons-col-7@xs@l">16 September 2026</dd>
+        </div>
+        <div class="ons-description-list__item">
+          <dt class="ons-description-list__term ons-grid__col ons-col-5@xs@l">Next release:</dt>
+          <dd class="ons-description-list__value ons-grid__col ons-col-7@xs@l">21 October 2026</dd>
+        </div>
+        <div class="ons-description-list__item">
+          <dt class="ons-description-list__term ons-grid__col ons-col-5@xs@l">Contact:</dt>
+          <dd class="ons-description-list__value ons-grid__col ons-col-7@xs@l">
+            <a class="ons-description-list__link"
+            href="#0">Consumer Price Inflation team</a>
+          </dd>
+        </div>
+      </dl> #}
+
+    </div>
+  </div>
+</section>
+
+<div class="ons-page__container ons-container ons-container--wide ">
+  <div class="ons-grid ons-js-table-of-contents-container">
+
+    <!-- main content -->
+    <div class="ons-grid__col ons-col-8@m ons-u-mb-xxl">
+      
+      <section id="crime-explore-data" class="ons-u-mb-xl">
+        <div class="ons-text-container">
+          {# <h2 class="ons-u-fs-xl ons-u-mt-2xl">Data on consumer price inflation (CPI)</h2> #}
+          <ul class="ons-document-list">
+            <li class="ons-document-list__item">
+              <div class="ons-document-list__item-content">
+                <div class="ons-document-list__item-header">
+                  <h2 class="ons-document-list__item-title ons-u-fs-m ons-u-mt-no ons-u-mb-2xs">
+                    <a href="#0">Crime in England and Wales: Appendix tables</a>
+                  </h2>
+                  <ul class="ons-document-list__item-metadata ons-u-mb-2xs">
+                    <li class="ons-document-list__item-attribute">
+                      <span class="ons-u-fw-b">Released on: </span><time datetime="2026-10-22">22 October 2026</time>
+                    </li>
+                    <li class="ons-document-list__item-attribute">
+                      <span class="ons-u-fw-b">Dataset</span>
+                    </li>
+                  </ul>
+                </div>
+                <div class="ons-document-list__item-description">
+                  <p>Trends in Crime Survey for England and Wales (CSEW) crime (accredited official statistics) and Home Office police recorded crime (official statistics) for England and Wales, by offence type. Also includes more detailed data on crime such as violence, fraud and anti-social behaviour.</p>
+                </div>
+              </div>
+            </li>
+            <li class="ons-document-list__item">
+              <div class="ons-document-list__item-content">
+                <div class="ons-document-list__item-header">
+                  <h2 class="ons-document-list__item-title ons-u-fs-m ons-u-mt-no ons-u-mb-2xs">
+                    <a href="#0">Crime in England and Wales: Annual supplementary tables</a>
+                  </h2>
+                  <ul class="ons-document-list__item-metadata ons-u-mb-2xs">
+                    <li class="ons-document-list__item-attribute">
+                      <span class="ons-u-fw-b">Released on: </span><time datetime="2026-07-23">23 July 2026</time>
+                    </li>
+                    <li class="ons-document-list__item-attribute">
+                      <span class="ons-u-fw-b">Dataset</span>
+                    </li>
+                  </ul>
+                </div>
+                <div class="ons-document-list__item-description">
+                  <p>Additional data from the Crime Survey for England and Wales (CSEW) on experience and perception of crime and antisocial behaviour.</p>
+                </div>
+              </div>
+            </li>
+            <li class="ons-document-list__item">
+              <div class="ons-document-list__item-content">
+                <div class="ons-document-list__item-header">
+                  <h2 class="ons-document-list__item-title ons-u-fs-m ons-u-mt-no ons-u-mb-2xs">
+                    <a href="#0">Crime severity score: Year ending March 2025</a>
+                  </h2>
+                  <ul class="ons-document-list__item-metadata ons-u-mb-2xs">
+                    <li class="ons-document-list__item-attribute">
+                      <span class="ons-u-fw-b">Released on: </span><time datetime="2026-12-09">9 December 2025</time>
+                    </li>
+                    <li class="ons-document-list__item-attribute">
+                      <span class="ons-u-fw-b">Dataset</span>
+                    </li>
+                  </ul>
+                </div>
+                <div class="ons-document-list__item-description">
+                  <p>Crime Severity Score (CSS) data for police force areas and community safety partnerships, which equate in the majority of instances to local authorities. Includes a data tool to enable production of summary charts on trends and comparisons between areas.</p>
+                </div>
+              </div>
+            </li>
+            <li class="ons-document-list__item">
+              <div class="ons-document-list__item-content">
+                <div class="ons-document-list__item-header">
+                  <h2 class="ons-document-list__item-title ons-u-fs-m ons-u-mt-no ons-u-mb-2xs">
+                    <a href="#0">Crime in England and Wales: Annual Trend and Demographic Tables</a>
+                  </h2>
+                  <ul class="ons-document-list__item-metadata ons-u-mb-2xs">
+                    <li class="ons-document-list__item-attribute">
+                      <span class="ons-u-fw-b">Released on: </span><time datetime="2024-07-24">24 July 2024</time>
+                    </li>
+                    <li class="ons-document-list__item-attribute">
+                      <span class="ons-u-fw-b">Dataset</span>
+                    </li>
+                  </ul>
+                </div>
+                <div class="ons-document-list__item-description">
+                  <p>Data from the Crime Survey for England and Wales (CSEW) showing breakdowns of victimisation over time and by various demographic characteristics.</p>
+                </div>
+              </div>
+            </li>
+            <li class="ons-document-list__item">
+              <div class="ons-document-list__item-content">
+                <div class="ons-document-list__item-header">
+                  <h2 class="ons-document-list__item-title ons-u-fs-m ons-u-mt-no ons-u-mb-2xs">
+                    <a href="#0">Crime in England and Wales: quarterly data tables</a>
+                  </h2>
+                  <ul class="ons-document-list__item-metadata ons-u-mb-2xs">
+                    <li class="ons-document-list__item-attribute">
+                      <span class="ons-u-fw-b">Released on: </span><time datetime="2024-07-24">24 July 2024</time>
+                    </li>
+                    <li class="ons-document-list__item-attribute">
+                      <span class="ons-u-fw-b">Dataset</span>
+                    </li>
+                  </ul>
+                </div>
+                <div class="ons-document-list__item-description">
+                  <p>Crime Survey for England and Wales (CSEW) and Home Office police recorded crime data, by quarterly time periods.</p>
+                </div>
+              </div>
+            </li>
+            <li class="ons-document-list__item">
+              <div class="ons-document-list__item-content">
+                <div class="ons-document-list__item-header">
+                  <h2 class="ons-document-list__item-title ons-u-fs-m ons-u-mt-no ons-u-mb-2xs">
+                    <a href="#0">Crime in England and Wales: other related tables</a>
+                  </h2>
+                  <ul class="ons-document-list__item-metadata ons-u-mb-2xs">
+                    <li class="ons-document-list__item-attribute">
+                      <span class="ons-u-fw-b">Released on: </span><time datetime="2024-07-24">24 July 2024</time>
+                    </li>
+                    <li class="ons-document-list__item-attribute">
+                      <span class="ons-u-fw-b">Dataset</span>
+                    </li>
+                  </ul>
+                </div>
+                <div class="ons-document-list__item-description">
+                  <p>Firearms, knife- and sharp-instrument offences, offences involving a corrosive substance, hospital admissions for assault with sharp objects, fraud, offences flagged as domestic abuse-related, corruption, anti-social behaviour, perceptions, and non-notifiable incidents.</p>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </div>
+  
+    <!-- right column -->
+    <div class="ons-grid__col ons-grid__col--sticky@m ons-col-4@m ons-u-pr-l ons-u-mb-xxl">
+      <section id="contact_details">
+        <h2 class="ons-u-fs-xl ons-u-mt-2xl">Contact details</h2>
+        <div class="ons-text-container">
+          <div class="ons-text-indent">
+            <p>ONS Centre for Crime and Justice<br>
+            <a href="mailto:someone@example.com">crimestatistics@ons.gov.uk</a><br>
+            Telephone: +44 1329 444 110<br>
+            Monday to Friday, 9am to 4pm</p>
+          </div>
+        </div>
+      </section>
+    </div> <!-- end right column -->
+
+  </div>
+</div>
+{% endblock %}
