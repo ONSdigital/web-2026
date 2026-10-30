@@ -142,7 +142,30 @@ aside.ons-related-content {
   margin: 2rem 0;
 }
 
+/* HEADLINE FACTS & FIGURES component  ---------- */
 
+.ons-card--feature {
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+}
+
+.ons-card {
+  padding-right: 2rem!important;
+  border-radius: 8px;
+}
+
+.ons-card__figure {
+  margin-top: auto;
+}
+
+.ons-card__title {
+  margin-bottom: 0.25rem;
+}
+
+// .ons-card__body {
+//   min-height: 3rem;
+// }
 
 
 /* EXPLORE DATA --------------------------------------- */
