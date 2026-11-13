@@ -144,16 +144,45 @@ aside.ons-related-content {
 
 /* HEADLINE FACTS & FIGURES component  ---------- */
 
+.ons-headline-tile {
+  color: #222222;
+  text-decoration: none!important;
+  transition: box-shadow 0.2s ease;
+}
+
+.ons-headline-tile,
+.ons-headline-tile * {
+  text-decoration: none;
+}
+
+.ons-headline-tile:hover {
+  color: #222222 !important;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, .12);
+  // box-shadow: 0 2px 4px rgba(0,0,0,.08);
+  background-color: #E9EFF4;
+}
+
+.ons-headline-tile .ons-card__title {
+  color: #206095;
+  text-decoration: underline;
+}
+
+.ons-headline-tile:hover .ons-card__title {
+  color: #003C57;
+  text-decoration: underline;
+}
+
+
 .ons-card--feature {
   display: flex;
   flex-direction: column;
   gap: 2rem;
-  padding: 2rem;
+  padding: 24px;
 }
 
 @media (max-width: 48rem) {
   .ons-card--feature {
-    padding: 1rem;
+    padding: 16px;
     padding-right: 1rem!important;
   }
 }
